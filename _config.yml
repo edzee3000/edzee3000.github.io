@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+title                    : "Homepage of Shihang Zhu"
 title_separator          : "-"
 name                     : "Shihang Zhu"
 description              : "I am an undergraduate student who enrolled in 2023 at the School of Artificial Intelligence, Nanjing University."   # Update this with a general description of your site, this is the default if not overridden by a page
