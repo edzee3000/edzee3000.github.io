@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* *B.S. in Artificial Intelligence, Nanjing University, 2027 (expected)*
-* *High School, Hangzhou Xuejun High School, 2023*
+* B.S. in *Artificial Intelligence*, *Nanjing University*, 2027 (expected)
+* High School, *Hangzhou Xuejun High School*, 2023
 
 <!--
 Work experience
