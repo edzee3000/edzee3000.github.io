@@ -12,12 +12,20 @@ Hi~ I am an undergraduate student who enrolled in 2023 at the School of Artifici
 
 
 # Related Research
-- 2025.04.15-2025.05.30: [CameraBench: Towards Understanding Camera Motions in Any Video](https://linzhiqiu.github.io/papers/camerabench/) was accepted to NeurIPS’25 (Spotlight)
-- 2025.07.11-up to now: [Building a Precise Video Language with Human–AI Oversight](https://openreview.net/forum?id=YCtPWfs8Nt)
+- 2025.04.15 - 2025.05.30: [CameraBench: Towards Understanding Camera Motions in Any Video](https://linzhiqiu.github.io/papers/camerabench/) was accepted to NeurIPS’25 (Spotlight)
+- 2025.07.11 - up to now: [Building a Precise Video Language with Human–AI Oversight](https://openreview.net/forum?id=YCtPWfs8Nt)
 
 
 
 
 # Internship Experience
-- 2026.01.14-: [HUAWEI](https://www.huawei.com/cn/)<img src="../images/HUAWEI.png" style="width:16px; height:16px; margin-right:4px;"> based in HangZhou, Zhejiang Province, China
+- 2026.01.14 - : <img src="../images/HUAWEI.png" style="width:24px; height:24px; margin-right:4px;"> [HUAWEI](https://www.huawei.com/cn/) based in HangZhou, Zhejiang Province, China
+
+
+
+
+# Student Affairs
+- 2025.10.01 - 2026.01.12：Served as Student Affairs Assistant, School of Artificial Intelligence, Nanjing University
+- 2025.09.01 - 2026.06.30: Served as President of the Student Union, School of Artificial Intelligence, Nanjing University
+
 
