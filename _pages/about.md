@@ -12,7 +12,12 @@ Hi~ I am an undergraduate student who enrolled in 2023 at the School of Artifici
 
 
 # Related Research
-- 2025.4.15-2025.5.30: [CameraBench: Towards Understanding Camera Motions in Any Video](https://linzhiqiu.github.io/papers/camerabench/) was accepted to NeurIPS’25 (Spotlight)
-- 2025.7.11-up to now: Building a Precise Video Language with Human–AI Oversight
+- 2025.04.15-2025.05.30: [CameraBench: Towards Understanding Camera Motions in Any Video](https://linzhiqiu.github.io/papers/camerabench/) was accepted to NeurIPS’25 (Spotlight)
+- 2025.07.11-up to now: [Building a Precise Video Language with Human–AI Oversight](https://openreview.net/forum?id=YCtPWfs8Nt)
 
+
+
+
+# Internship Experience
+- 2026.01.14-: [HuaWei](https://www.huawei.com/cn/) based in HangZhou, Zhejiang Province, China
 
