@@ -35,7 +35,7 @@ Focusing on the rich and implicit information contained in images and charts wit
 
 
 ## Student Affairs
-- 2025.10.01 - 2026.01.12：Served as Student Affairs Assistant, School of Artificial Intelligence, Nanjing University
+- 2025.10.01 - 2026.01.12: Served as Student Affairs Assistant, School of Artificial Intelligence, Nanjing University
 - 2025.09.01 - 2026.06.30: Served as President of the Student Union, School of Artificial Intelligence, Nanjing University
 
 
