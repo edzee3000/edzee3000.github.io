@@ -21,7 +21,7 @@ Hi~ I am an undergraduate student who enrolled in 2023 at the School of Artifici
 
 
 ## Internship Experience
-- 2026.01.14 - : <img src="../images/HUAWEI.png" style="width:24px; height:24px; margin-right:4px;"> [HUAWEI](https://www.huawei.com/cn/) based in HangZhou, Zhejiang Province, China
+- 2026.01.14 - : <img src="../images/HUAWEI.png" style="width:24px; height:24px; margin-right:4px;"> [HUAWEI](https://www.huawei.com/cn/) based in HangZhou, Zhejiang Province, China. ***Research and Implementation of Model Quantization***
 
 
 
