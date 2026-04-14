@@ -16,8 +16,10 @@ Hi~ I am an undergraduate student who enrolled in 2023 at the School of Artifici
 - Tel: (+86) 15715154051 (WeChat Account linked to my phone number)
 
 ## Related Research
+<!--
 - 2025.04.15 - 2025.05.30: [CameraBench: Towards Understanding Camera Motions in Any Video](https://linzhiqiu.github.io/papers/camerabench/) was accepted to [NeurIPS’25](https://neurips.cc/Conferences/2025) (Spotlight)
-- 2025.07.11 - Present: [Building a Precise Video Language with Human–AI Oversight](https://openreview.net/forum?id=YCtPWfs8Nt) was accepted to [CVPR’2026](https://cvpr.thecvf.com/Conferences/2026)
+-->
+- 2025.07.11 - Present: [Building a Precise Video Language with Human–AI Oversight](https://openreview.net/pdf?id=ujfcVzb3Si) was accepted to [CVPR’2026](https://cvpr.thecvf.com/Conferences/2026)(Highlight)
 
 
 ## Internship Experience
