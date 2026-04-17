@@ -19,7 +19,7 @@ Hi~ I am an undergraduate student who enrolled in 2023 at the School of Artifici
 <!--
 - 2025.04.15 - 2025.05.30: [CameraBench: Towards Understanding Camera Motions in Any Video](https://linzhiqiu.github.io/papers/camerabench/) was accepted to [NeurIPS’25](https://neurips.cc/Conferences/2025) (Spotlight)
 -->
-- 2025.07.11 - Present: [Building a Precise Video Language with Human–AI Oversight](https://openreview.net/pdf?id=ujfcVzb3Si) was accepted to [CVPR’2026](https://cvpr.thecvf.com/Conferences/2026)   (Highlight)
+- 2025.07.11 - Present: [Building a Precise Video Language with Human–AI Oversight](https://cvpr.thecvf.com/virtual/2026/poster/37994) was accepted to [CVPR’2026](https://cvpr.thecvf.com/Conferences/2026)   (Highlight)
 
 
 ## Internship Experience
