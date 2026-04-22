@@ -23,6 +23,25 @@ redirect_from:
 
 -->
 
+{% include base_path %}
+
+<!-- 这里写你想要的日记/碎碎念引言区域 -->
+<div class="page__content" style="margin-bottom: 2em;">
+  <p>
+    这里存放日常随笔、学习记录与生活碎记。
+    随手写下思考、感悟与日常片段，当作时光的自留地，记录成长，留存日常。
+  </p>
+</div>
+
+{% capture written_year %}'None'{% endcapture %}
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% if year != written_year %}
+    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+    {% capture written_year %}{{ year }}{% endcapture %}
+  {% endif %}
+  {% include archive-single.html %}
+{% endfor %}
 
 现在是2026年4月23日凌晨3点15分，没错，又失眠了，最近这段时间作息相当阴间，白天睡不醒晚上睡不着，本来想着强制自己睡觉的，但是翻来覆去思来想去最后还是失败了，外加自己平时总是想得多做得少，遂痛下决心每天写点日记记录一下。
 
