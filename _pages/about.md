@@ -27,7 +27,7 @@ Hi~ I am an undergraduate student who enrolled in 2023 at the School of Artifici
 
 ## Internship Experience
 - 2026.01 - 2026.04: <img src="../images/HUAWEI.png" style="width:24px; height:24px; margin-right:4px;"> [HUAWEI](https://www.huawei.com/cn/) based in HangZhou, Zhejiang Province, China. ***Research and Implementation of Model Quantization***
-- 2026.07 - Now: <img src="../images/MANYCORE.png" style="width:24px; height:24px; margin-right:4px;"> [Manycore Tech (群核科技)](https://www.manycore.cn/) based in HangZhou, Zhejiang Province, China. ***Software Development Engineer — Assembly Agent Group, Image-to-3D Direction.***
+- 2026.07 - Now: <img src="../images/MANYCORE.png" style="width:24px; height:24px; margin-right:4px;"> [Manycore Tech](https://manycoretech.com/) based in HangZhou, Zhejiang Province, China. ***Software Development Engineer — Assembly Agent Group, Image-to-3D Direction.***
 
 
 
