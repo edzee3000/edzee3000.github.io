@@ -1,0 +1,29 @@
+# Live Performance Archive
+# Each show entry contains:
+#   date:    YYYY-MM-DD format (used for sorting)
+#   title:   Show/artist name
+#   folder:  Path in the HF dataset (without trailing slash)
+#   cover:   Filename of the cover/thumbnail image
+#   photos:  List of photo filenames in the folder
+#
+# HF raw URL pattern:
+#   https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/resolve/main/{folder}/{filename}
+
+- date: 2026-04-19
+  title: "Deca Joins"
+  folder: "20260419DecaJoins/精选"
+  cover: "DSCF3910.JPG"
+  photos:
+    - "DSCF3910.JPG"
+    - "DSCF3915.JPG"
+    - "DSCF3917.JPG"
+    - "DSCF3929.JPG"
+    - "DSCF3930.JPG"
+    - "DSCF3937.JPG"
+    - "DSCF3944 - frame at 1m30s.jpg"
+    - "DSCF3944 - frame at 1m31s.jpg"
+    - "DSCF3944 - frame at 1m32s.jpg"
+    - "DSCF3950.JPG"
+    - "DSCF3951.JPG"
+    - "DSCF3959.JPG"
+    - "DSCF3970.JPG"

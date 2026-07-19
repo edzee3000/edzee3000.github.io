@@ -1,0 +1,447 @@
+---
+layout: single
+title: "Live"
+permalink: /live/
+author_profile: true
+---
+
+<style>
+/* ==========================================================================
+   Live Gallery Styles
+   ========================================================================== */
+
+.live-gallery {
+  margin-top: 1em;
+}
+
+.show-card {
+  margin-bottom: 2.5em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid var(--global-border-color, #e8e8e8);
+}
+
+.show-card:last-child {
+  border-bottom: none;
+}
+
+.show-header {
+  margin-bottom: 1em;
+}
+
+.show-date {
+  display: inline-block;
+  background: var(--global-link-color, #52adc8);
+  color: #fff;
+  padding: 0.15em 0.7em;
+  border-radius: 3px;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.3em;
+}
+
+.show-title {
+  font-size: 1.4em;
+  margin: 0.2em 0 0 0;
+  color: var(--global-text-color, #494e52);
+}
+
+/* Photo Grid */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+@media (max-width: 900px) {
+  .photo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.photo-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 4px;
+  aspect-ratio: 3 / 2;
+  background: #f0f0f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.photo-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+.photo-item .photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.5));
+  padding: 20px 8px 6px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.photo-item:hover .photo-overlay {
+  opacity: 1;
+}
+
+.photo-overlay span {
+  color: #fff;
+  font-size: 0.7em;
+}
+
+/* ==========================================================================
+   Lightbox
+   ========================================================================== */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 99999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  color: #ccc;
+  font-size: 36px;
+  font-weight: 300;
+  cursor: pointer;
+  z-index: 100001;
+  line-height: 1;
+  transition: color 0.2s;
+  user-select: none;
+}
+
+.lightbox-close:hover {
+  color: #fff;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 48px;
+  cursor: pointer;
+  z-index: 100001;
+  padding: 16px 12px;
+  user-select: none;
+  transition: color 0.2s;
+  line-height: 1;
+}
+
+.lightbox-nav:hover {
+  color: #fff;
+}
+
+.lightbox-prev {
+  left: 8px;
+}
+
+.lightbox-next {
+  right: 8px;
+}
+
+.lightbox-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.lightbox-content img {
+  max-width: 95%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+}
+
+.lightbox-counter {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #999;
+  font-size: 0.85em;
+  z-index: 100001;
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ccc;
+  font-size: 0.8em;
+  max-width: 700px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Loading spinner */
+.lightbox-loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255,255,255,0.2);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  z-index: 100000;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* No photos fallback */
+.no-photos {
+  color: var(--global-text-color-light, #999);
+  font-style: italic;
+  padding: 1em 0;
+}
+
+/* HF link button */
+.hf-link {
+  display: inline-block;
+  margin-top: 0.5em;
+  font-size: 0.78em;
+  color: var(--global-link-color, #52adc8);
+  text-decoration: none;
+}
+
+.hf-link:hover {
+  text-decoration: underline;
+}
+</style>
+
+<div class="live-gallery">
+
+{% assign shows = site.data.live | sort: "date" | reverse %}
+
+{% if shows.size == 0 %}
+  <p class="no-photos">No shows added yet. Check back soon!</p>
+{% endif %}
+
+{% for show in shows %}
+  <div class="show-card">
+    <div class="show-header">
+      <span class="show-date">{{ show.date | date: "%Y.%m.%d" }}</span>
+      <h2 class="show-title">{{ show.title }}</h2>
+      {% if show.description %}
+        <p class="show-desc">{{ show.description }}</p>
+      {% endif %}
+    </div>
+
+    {% if show.photos %}
+    <div class="photo-grid"
+         data-folder="{{ show.folder }}"
+         data-photos='{{ show.photos | jsonify }}'>
+      {% for photo in show.photos %}
+        <div class="photo-item"
+             data-index="{{ forloop.index0 }}"
+             data-filename="{{ photo }}">
+          <img src="https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/resolve/main/{{ show.folder }}/thumbnails/{{ photo }}"
+               alt="{{ photo }}"
+               loading="lazy"
+               onerror="this.src='https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/resolve/main/{{ show.folder }}/{{ photo }}'; this.onerror=null;">
+          <div class="photo-overlay"><span>🔍</span></div>
+        </div>
+      {% endfor %}
+    </div>
+    {% else %}
+      <p class="no-photos">No photos yet.</p>
+    {% endif %}
+
+    <a class="hf-link" href="https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/tree/main/{{ show.folder }}" target="_blank" rel="noopener">
+      📁 View all files on Hugging Face →
+    </a>
+  </div>
+{% endfor %}
+
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close">&times;</span>
+  <span class="lightbox-nav lightbox-prev" id="lightbox-prev">&#8249;</span>
+  <span class="lightbox-nav lightbox-next" id="lightbox-next">&#8250;</span>
+  <div class="lightbox-content" id="lightbox-content">
+    <div class="lightbox-loader" id="lightbox-loader"></div>
+    <img id="lightbox-img" alt="Full size photo" style="display:none;">
+  </div>
+  <div class="lightbox-counter" id="lightbox-counter"></div>
+</div>
+
+<script>
+(function() {
+
+  // =========================================================================
+  // HF URL Helpers
+  // =========================================================================
+  var HF_BASE = 'https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/resolve/main/';
+
+  function encodePath(path) {
+    return path.split('/').map(function(seg) {
+      return encodeURIComponent(seg);
+    }).join('/');
+  }
+
+  function thumbUrl(folder, filename) {
+    return HF_BASE + encodePath(folder) + '/thumbnails/' + encodeURIComponent(filename);
+  }
+
+  function fullUrl(folder, filename) {
+    return HF_BASE + encodePath(folder) + '/' + encodeURIComponent(filename);
+  }
+
+  // =========================================================================
+  // Lightbox
+  // =========================================================================
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightbox-img');
+  var lbLoader = document.getElementById('lightbox-loader');
+  var lbCounter = document.getElementById('lightbox-counter');
+  var lbClose = document.getElementById('lightbox-close');
+  var lbPrev = document.getElementById('lightbox-prev');
+  var lbNext = document.getElementById('lightbox-next');
+
+  var currentPhotos = [];
+  var currentIndex = 0;
+
+  function showLightbox(photos, index) {
+    currentPhotos = photos;
+    currentIndex = index;
+    loadImage(photos[index]);
+    lb.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    updateCounter();
+  }
+
+  function hideLightbox() {
+    lb.classList.remove('active');
+    document.body.style.overflow = '';
+    lbImg.style.display = 'none';
+    lbLoader.style.display = 'block';
+  }
+
+  function loadImage(url) {
+    lbImg.style.display = 'none';
+    lbLoader.style.display = 'block';
+    lbImg.src = url;
+    lbImg.onload = function() {
+      lbLoader.style.display = 'none';
+      lbImg.style.display = 'block';
+    };
+    lbImg.onerror = function() {
+      lbLoader.style.display = 'none';
+      lbImg.style.display = 'block';
+      lbImg.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150"><rect fill="%23333" width="200" height="150"/><text fill="%23999" x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="14">Load Failed</text></svg>';
+    };
+  }
+
+  function updateCounter() {
+    if (currentPhotos.length <= 1) {
+      lbCounter.textContent = '';
+      lbPrev.style.display = 'none';
+      lbNext.style.display = 'none';
+    } else {
+      lbCounter.textContent = (currentIndex + 1) + ' / ' + currentPhotos.length;
+      lbPrev.style.display = '';
+      lbNext.style.display = '';
+    }
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + currentPhotos.length) % currentPhotos.length;
+    loadImage(currentPhotos[currentIndex]);
+    updateCounter();
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % currentPhotos.length;
+    loadImage(currentPhotos[currentIndex]);
+    updateCounter();
+  }
+
+  // Events
+  lbClose.addEventListener('click', hideLightbox);
+  lbPrev.addEventListener('click', function(e) { e.stopPropagation(); showPrev(); });
+  lbNext.addEventListener('click', function(e) { e.stopPropagation(); showNext(); });
+
+  lb.addEventListener('click', function(e) {
+    if (e.target === lb) hideLightbox();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (!lb.classList.contains('active')) return;
+    switch (e.key) {
+      case 'Escape':    hideLightbox(); break;
+      case 'ArrowLeft': showPrev(); break;
+      case 'ArrowRight':showNext(); break;
+    }
+  });
+
+  // =========================================================================
+  // Photo Grid Click Handlers
+  // =========================================================================
+  var grids = document.querySelectorAll('.photo-grid');
+  grids.forEach(function(grid) {
+    var folder = grid.getAttribute('data-folder');
+    var rawPhotos = grid.getAttribute('data-photos');
+    var photos = JSON.parse(rawPhotos);
+
+    grid.addEventListener('click', function(e) {
+      var item = e.target.closest('.photo-item');
+      if (!item) return;
+
+      var index = parseInt(item.getAttribute('data-index'), 10);
+      var fullUrls = photos.map(function(f) { return fullUrl(folder, f); });
+      showLightbox(fullUrls, index);
+    });
+  });
+
+})();
+</script>
