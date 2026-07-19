@@ -174,6 +174,124 @@ body {
   justify-content: center;
 }
 
+/* ---- Video Grid ---- */
+.video-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin: 32px 8px 12px;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 8px;
+}
+.video-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--bg-card);
+  border-radius: 3px;
+  aspect-ratio: 16/9;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.video-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+  z-index: 2;
+}
+.video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.video-card:hover img {
+  transform: scale(1.06);
+}
+.video-play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+.video-card:hover .video-play-btn {
+  background: rgba(0,0,0,0.45);
+}
+.video-play-btn .play-icon {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+.video-card:hover .play-icon {
+  transform: scale(1.1);
+}
+.play-icon::after {
+  content: '';
+  display: block;
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 18px;
+  border-color: transparent transparent transparent #111;
+  margin-left: 3px;
+}
+
+/* ---- Video Modal ---- */
+.video-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.94);
+  z-index: 9999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.video-modal.active {
+  display: flex;
+}
+.vm-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  color: #999;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 10001;
+  width: 40px; height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+  line-height: 1;
+}
+.vm-close:hover { color: #fff; background: rgba(255,255,255,0.1); }
+.vm-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 64px;
+}
+.vm-wrap video {
+  max-width: 92%;
+  max-height: 88vh;
+  border-radius: 4px;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.7);
+  outline: none;
+}
+
 /* ---- Footer ---- */
 .footer {
   text-align: center;
@@ -283,9 +401,9 @@ body {
 @media (max-width: 768px) {
   .hero { padding: 100px 20px 48px; }
   .hero h1 { font-size: 2rem; }
-  .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 4px; }
+  .photo-grid, .video-grid { grid-template-columns: repeat(2, 1fr); gap: 4px; }
   .show-section { margin-bottom: 48px; }
-  .lb-img-wrap { padding: 24px; }
+  .vm-wrap, .lb-img-wrap { padding: 24px; }
   .lb-nav { font-size: 36px; padding: 12px 8px; }
 }
 @media (max-width: 480px) {
@@ -353,6 +471,26 @@ body {
     {% else %}
       <p style="color:var(--text-muted);padding:0 8px;font-style:italic;">No photos uploaded yet.</p>
     {% endif %}
+
+    {% if show.videos %}
+    <p class="video-label">Videos</p>
+    <div class="video-grid"
+         data-vfolder="{{ show.video_folder | default: show.folder }}"
+         data-videos='{{ show.videos | jsonify }}'>
+      {% for vid in show.videos %}
+        <div class="video-card"
+             data-vindex="{{ forloop.index0 }}">
+          <img src="https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/resolve/main/{{ show.video_folder | default: show.folder }}/posters/{{ vid.poster }}"
+               alt="{{ vid.file }}"
+               loading="lazy"
+               onerror="this.style.background='linear-gradient(135deg,#1a1a1e,#111114)';">
+          <div class="video-play-btn">
+            <span class="play-icon"></span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 {% endfor %}
 
@@ -377,6 +515,16 @@ body {
     <img id="lb-img" alt="" style="display:none;">
   </div>
   <span class="lb-counter" id="lb-counter"></span>
+</div>
+
+<!-- ====================================================================== -->
+<!-- VIDEO MODAL                                                             -->
+<!-- ====================================================================== -->
+<div class="video-modal" id="video-modal">
+  <span class="vm-close" id="vm-close">&times;</span>
+  <div class="vm-wrap" id="vm-wrap">
+    <video id="vm-video" controls playsinline autoplay></video>
+  </div>
 </div>
 
 <!-- ====================================================================== -->
@@ -479,6 +627,46 @@ body {
       var urls = list.map(function(f) { return fullUrl(folder, f); });
       open(urls, i);
     });
+  });
+
+  // =========================================================================
+  // Video playback
+  // =========================================================================
+  var vm = document.getElementById('video-modal');
+  var vmVid = document.getElementById('vm-video');
+
+  document.querySelectorAll('.video-grid').forEach(function(grid) {
+    var vfolder = grid.getAttribute('data-vfolder');
+    var raw = grid.getAttribute('data-videos');
+    var list = JSON.parse(raw);
+
+    grid.addEventListener('click', function(e) {
+      var card = e.target.closest('.video-card');
+      if (!card) return;
+      var i = parseInt(card.getAttribute('data-vindex'), 10);
+      var v = list[i];
+      var url = fullUrl(vfolder, v.file);
+      vmVid.src = url;
+      vm.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      vmVid.play().catch(function(){});
+    });
+  });
+
+  function closeVideo() {
+    vm.classList.remove('active');
+    document.body.style.overflow = '';
+    vmVid.pause();
+    vmVid.src = '';
+  }
+
+  document.getElementById('vm-close').addEventListener('click', closeVideo);
+  vm.addEventListener('click', function(e) {
+    if (e.target === vm || e.target.id === 'vm-wrap') closeVideo();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (!vm.classList.contains('active')) return;
+    if (e.key === 'Escape') closeVideo();
   });
 
 })();
