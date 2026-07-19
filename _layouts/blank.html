@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% seo %}
+  {% feed_meta %}
+  {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
+  {% if site.bing_site_verification %}<meta name="msvalidate.01" content="{{ site.bing_site_verification }}">{% endif %}
+</head>
+<body>
+  {{ content }}
+</body>
+</html>
