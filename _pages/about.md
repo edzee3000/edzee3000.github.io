@@ -32,13 +32,11 @@ Hi~ I am an undergraduate student who enrolled in 2023 at the School of Artifici
 
 
 ## Personal Project
-- 2026.04 - 2026.05: [NJU GPA Assessor](https://njuai-gpa.vercel.app/) An [open-source GPA calculator](https://github.com/edzee3000/njuai-gpa) developed for the School of Artificial Intelligence at Nanjing University, designed to support NJUAI students across multiple evaluation scenarios, including graduate recommendations and scholarship applications.
-- 2025.06 - 2025.08: [VisionQASystem](https://github.com/edzee3000/VisionQASystem) A Multimodal Financial Document Retrieval and Visual Question Answering System
-for [“Huatai Securities Cup” AI+ Innovation and Entrepreneurship Competition](https://www.nju.edu.cn/info/1056/453201.htm).
-Focusing on the rich and implicit information contained in images and charts within financial documents (such as research reports), this project develops a document question-answering system that allows users to upload documents, perform cross-modal retrieval to recall relevant document pages, and then leverage large vision models to analyze charts and figures on those pages and answer user queries.
-- 2025.06 - 2025.08: [ASLRecognition](https://github.com/edzee3000/ASLRecognition) This project aims to train a multimodal model for recognizing American Sign Language from scratch by building a Transformer Encoder–Decoder Architecture and incorporating Squeezeformer to optimize the model.
-- 2024.09 - 2025.01: [ICS2024 Programming Assignment](https://github.com/edzee3000/ICS2024PA) This project is the programming assignment of the class [ICS (Introduction to Computer System)](https://nju-projectn.github.io/ics-pa-gitbook/ics2024/) in Department of Computer Science and Technology, Nanjing University. Here gives out my understanding of the project and its concrete implementation, covering a total of five branches: PA1–PA4 and the master branch. For the guide of this programming assignment, refer to [ics-pa-gitbook](https://nju-projectn.github.io/ics-pa-gitbook/ics2024/)
-- 2024.04 - 2024.06: [AI Guandan](https://github.com/edzee3000/AIGuanDanGame) Final Project Design for the 2024 "Artificial Intelligence Programming" Course at the School of Artificial Intelligence, Nanjing University. The project implements automated card playing using both rule-based strategies and neural network–based strategies, serving as an introductory exploration of artificial intelligence.
+- 2026.05: [NJU GPA Assessor](https://njuai-gpa.vercel.app/) — An [open-source GPA calculator](https://github.com/edzee3000/njuai-gpa) for NJUAI students, supporting graduate recommendation and scholarship evaluation scenarios.
+- 2025.08: [VisionQASystem](https://github.com/edzee3000/VisionQASystem) — A multimodal financial document retrieval and visual QA system for the [“Huatai Securities Cup” AI+ Competition](https://www.nju.edu.cn/info/1056/453201.htm), using cross-modal retrieval and large vision models to analyze charts in financial reports.
+- 2025.08: [ASLRecognition](https://github.com/edzee3000/ASLRecognition) — A multimodal model for American Sign Language recognition, built from scratch with a Transformer Encoder–Decoder architecture and Squeezeformer optimization.
+- 2025.01: [ICS2024 PA](https://github.com/edzee3000/ICS2024PA) — Programming assignments for [ICS (Introduction to Computer System)](https://nju-projectn.github.io/ics-pa-gitbook/ics2024/) at NJU, covering five branches (PA1–PA4 + master) that implement a complete computer system from the ground up.
+- 2024.06: [AI Guandan](https://github.com/edzee3000/AIGuanDanGame) — Final project for the “AI Programming” course at NJU. Implements automated card playing using both rule-based and neural network strategies.
 
 
 
