@@ -34,8 +34,8 @@ Hi~ I am an undergraduate student who enrolled in 2023 at the School of Artifici
 ## Personal Project
 - 2026.05: [NJU GPA Assessor](https://njuai-gpa.vercel.app/) — An [open-source GPA calculator](https://github.com/edzee3000/njuai-gpa) for NJUAI students, supporting graduate recommendation and scholarship evaluation scenarios.
 - 2025.08: [VisionQASystem](https://github.com/edzee3000/VisionQASystem) — A multimodal financial document retrieval and visual QA system for the [“Huatai Securities Cup” AI+ Competition](https://www.nju.edu.cn/info/1056/453201.htm), using cross-modal retrieval and large vision models to analyze charts in financial reports.
-- 2025.08: [ASLRecognition](https://github.com/edzee3000/ASLRecognition) — A multimodal model for American Sign Language recognition, built from scratch with a Transformer Encoder–Decoder architecture and Squeezeformer optimization.
-- 2025.01: [ICS2024 PA](https://github.com/edzee3000/ICS2024PA) — Programming assignments for [ICS (Introduction to Computer System)](https://nju-projectn.github.io/ics-pa-gitbook/ics2024/) at NJU, covering five branches (PA1–PA4 + master) that implement a complete computer system from the ground up.
+- 2025.08: [ASLRecognition](https://github.com/edzee3000/ASLRecognition) — A multimodal model for American Sign Language recognition, trained from the ground up with a Transformer Encoder–Decoder architecture and Squeezeformer optimization.
+- 2025.01: [ICS2024 PA](https://github.com/edzee3000/ICS2024PA) — Programming assignments for [ICS (Introduction to Computer System)](https://nju-projectn.github.io/ics-pa-gitbook/ics2024/) at NJU, covering PA1–PA4, implementing a complete computer system from the ground up.
 - 2024.06: [AI Guandan](https://github.com/edzee3000/AIGuanDanGame) — Final project for the “AI Programming” course at NJU. Implements automated card playing using both rule-based and neural network strategies.
 
 
