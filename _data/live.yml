@@ -12,7 +12,7 @@
 #   https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/resolve/main/{folder}/{filename}
 
 - date: 2026-06-13
-  title: "River Music Festival (河流音乐节)"
+  title: "River Music Festival (河流音乐节) @ 徐州马陵山花厅部落"
   video_folder: "20260613河流音乐节/视频"
   videos:
     - file: "dji_export_20260614_031125_1781377885804_editor.mp4"
@@ -65,7 +65,7 @@
       poster: "dji_export_20260614_085646_1781398606346_editor.jpg"
 
 - date: 2026-06-11
-  title: "Summer Sketch (夏日速写)"
+  title: "Summer Sketch (夏日速写) @ 上海瓦肆"
   video_folder: "20260611夏日速写/视频"
   videos:
     - file: "DJI_20260611123655_0035_D.MP4"
@@ -112,7 +112,7 @@
       poster: "dji_export_20260612_115521_1781236521853_editor.jpg"
 
 - date: 2026-04-19
-  title: "Deca Joins"
+  title: "Deca Joins @ 南京1701"
   folder: "20260419DecaJoins/照片"
   video_folder: "20260419DecaJoins/视频"
   cover: "DSCF3906.JPG"
