@@ -480,7 +480,8 @@ body {
       {% for vid in show.videos %}
         <div class="video-card"
              data-vindex="{{ forloop.index0 }}">
-          <img src="https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/resolve/main/{{ show.video_folder | default: show.folder }}/posters/{{ vid.poster }}"
+          <img data-folder="{{ show.video_folder | default: show.folder }}"
+               data-poster="{{ vid.poster }}"
                alt="{{ vid.file }}"
                loading="lazy"
                onerror="this.style.background='linear-gradient(135deg,#1a1a1e,#111114)';">
@@ -627,6 +628,17 @@ body {
       var urls = list.map(function(f) { return fullUrl(folder, f); });
       open(urls, i);
     });
+  });
+
+  // =========================================================================
+  // Fix video poster URLs with proper encoding
+  // =========================================================================
+  document.querySelectorAll('.video-card img').forEach(function(img) {
+    var folder = img.getAttribute('data-folder');
+    var poster = img.getAttribute('data-poster');
+    if (folder && poster) {
+      img.src = HF_BASE + enc(folder) + '/posters/' + encodeURIComponent(poster);
+    }
   });
 
   // =========================================================================
