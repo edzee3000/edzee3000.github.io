@@ -1,0 +1,89 @@
+---
+layout: blank
+title: "Hobby"
+permalink: /hobby/
+---
+
+<style>
+:root {
+  --bg: #0a0a0c;
+  --text: #e4e0da;
+  --text-dim: #7a7670;
+  --accent: #c4a06a;
+  --border: #1e1c1a;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing: antialiased; line-height:1.7;
+}
+.nav {
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  padding: 16px 24px;
+  background: linear-gradient(180deg, rgba(10,10,12,0.95) 40%, rgba(10,10,12,0) 100%);
+  backdrop-filter: blur(8px);
+  display:flex; justify-content:space-between; align-items:center;
+}
+.nav a { color:var(--text-dim); text-decoration:none; font-size:0.85rem; transition: color 0.3s; }
+.nav a:hover { color:var(--text); }
+.nav-title { font-size:0.75rem; text-transform:uppercase; letter-spacing:2px; color:var(--text-dim); }
+
+.hero { padding:120px 24px 60px; text-align:center; max-width:720px; margin:0 auto; }
+.hero h1 { font-size:clamp(2.4rem,5vw,4rem); font-weight:800; letter-spacing:-1px; line-height:1.1; margin-bottom:1rem; }
+.hero .intro { color:var(--text-dim); font-size:1rem; line-height:1.8; }
+.hero .intro span { color:var(--text); }
+
+.content { max-width:900px; margin:0 auto; padding:0 24px 100px; }
+.section { margin-bottom:3rem; }
+.section h2 { font-size:1.3rem; margin-bottom:1rem; padding-bottom:0.5rem; border-bottom:1px solid var(--border); }
+.section p { color:var(--text-dim); }
+
+@media (max-width:640px) {
+  .hero { padding:100px 20px 40px; }
+  .hero h1 { font-size:2rem; }
+}
+</style>
+
+<nav class="nav">
+  <a href="{{ '/' | relative_url }}">← Home</a>
+  <span class="nav-title">Hobby</span>
+  <span></span>
+</nav>
+
+<section class="hero">
+  <h1>Hobby</h1>
+  <p class="intro">
+    🤘 Rock live &amp; music festival regular<br>
+    🎸 Bassist who noodles on electric guitar<br>
+    💪 Long-haired gym enthusiast<br>
+    👨🏻‍💻 Vibe-coding slacker<br>
+    🚗 Aspiring nomadic traveler<br>
+    📷 Amateur shutterbug<br>
+    🍸🥃 Food &amp; drink explorer<br>
+    🍸 Dorm-room bartender
+  </p>
+</section>
+
+<div class="content">
+  <div class="section">
+    <h2>🎵 Music</h2>
+    <p>Coming soon — independent music playlist &amp; recommendations.</p>
+  </div>
+  <div class="section">
+    <h2>💪 Fitness</h2>
+    <p>Coming soon.</p>
+  </div>
+  <div class="section">
+    <h2>👨🏻‍💻 Tech</h2>
+    <p>Coming soon.</p>
+  </div>
+  <div class="section">
+    <h2>📷 Photography</h2>
+    <p>Coming soon — photo gallery from my travels and daily life.</p>
+  </div>
+  <div class="section">
+    <h2>🍸 Food &amp; Drinks</h2>
+    <p>Coming soon.</p>
+  </div>
+</div>

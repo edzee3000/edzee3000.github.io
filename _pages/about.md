@@ -46,18 +46,3 @@ Hi~ I am an undergraduate student who enrolled in 2023 at the School of Artifici
 
 
 
-## Life & Hobbies
-
-🤘 Rock live & music festival regular · 🎸 Bassist who noodles on electric guitar · 💪 Long-haired gym enthusiast · 👨🏻‍💻 Vibe-coding slacker · 🚗 Aspiring nomadic traveler · 📷 Amateur shutterbug · 🍸🥃 Food & drink explorer · 🍸 Dorm-room bartender
-
-### 🎵 Music
-
-### 💪 Fitness
-
-### 👨🏻‍💻 Tech
-
-### 📷 Photography
-
-### 🍸 Food & Drinks
-
-
