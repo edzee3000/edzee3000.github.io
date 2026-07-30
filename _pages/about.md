@@ -16,8 +16,8 @@ Hi~ I am an undergraduate student who enrolled in 2023 at the School of Artifici
 - Tel: (+86) 15715154051 (WeChat Account linked to my phone number)
 
 ## Education
-- B.S. in *Artificial Intelligence*, Nanjing University, 2023 – 2027 (expected)
-- High School, Hangzhou Xuejun High School, 2020 – 2023
+- <img src="../images/NJU.png" style="height:22px; vertical-align:middle; margin-right:4px;"> B.S. in *Artificial Intelligence*, Nanjing University, 2023 – 2027 (expected)
+- <img src="../images/XUEJUN.png" style="height:22px; vertical-align:middle; margin-right:4px;"> High School, Hangzhou Xuejun High School, 2020 – 2023
 
 ## Related Research
 <!--
