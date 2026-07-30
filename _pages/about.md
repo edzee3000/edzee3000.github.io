@@ -20,8 +20,8 @@ Hi~ I am an undergraduate student who enrolled in 2023 at the School of Artifici
 - 2025.04.15 - 2025.05.30: [CameraBench: Towards Understanding Camera Motions in Any Video](https://linzhiqiu.github.io/papers/camerabench/) was accepted to [NeurIPS’25](https://neurips.cc/Conferences/2025) (Spotlight)
 - 2025.07.11 - Present: [Building a Precise Video Language with Human–AI Oversight](https://cvpr.thecvf.com/virtual/2026/poster/37994) was accepted to [CVPR’2026](https://cvpr.thecvf.com/Conferences/2026)   (Highlight)
 -->
-- 2025.07 - 2026.04: [CHAI](https://linzhiqiu.github.io/papers/chai/) was accepted to [CVPR’26](https://cvpr.thecvf.com/virtual/2026/poster/37994) as a Highlight (Top 3%)! An 8B model beating GPT-5 and Gemini-3.1-Pro on professional video captioning.
-- 2025.10 - 2026.06: [Moodio](https://linzhiqiu.github.io/papers/moodio/): An AI-powered film studio that reframes video creation as "learning by watching" — users discover, learn from, and reuse professional cinematic reference clips, with a three-stage workflow supporting 12 video generators.
+- 2026.04: [CHAI](https://linzhiqiu.github.io/papers/chai/) was accepted to [CVPR’26](https://cvpr.thecvf.com/virtual/2026/poster/37994) as a Highlight (Top 3%)! An 8B model beating GPT-5 and Gemini-3.1-Pro on professional video captioning.
+- 2026.05: [Moodio](https://linzhiqiu.github.io/papers/moodio/): An AI-powered film studio that reframes video creation as "learning by watching" — users discover, learn from, and reuse professional cinematic reference clips, with a three-stage workflow supporting 12 video generators.
 
 
 

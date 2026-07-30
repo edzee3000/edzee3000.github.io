@@ -157,6 +157,18 @@
   }
 }
 
+.author__motto {
+  margin: 0;
+  font-style: italic;
+  color: $muted-text-color;
+  font-size: 0.85em;
+
+  @include breakpoint($large) {
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+}
+
 .author__urls-wrapper {
   position: relative;
   display: table-cell;
