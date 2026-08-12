@@ -163,6 +163,7 @@ analytics:
 include:
   - .htaccess
   - _pages
+  - _next
   - files
 exclude:
   - "*.sublime-project"
