@@ -1,548 +1,259 @@
 ---
-layout: blank
-title: "Live"
+layout: live
+title: "Live — After the Encore"
+description: "Live music, field recordings, and moments from the crowd. A personal visual archive by edzee3000."
 permalink: /live/
 ---
-
-<style>
-/* ==========================================================================
-   Live Archive — Concert Venue Theme
-   ========================================================================== */
-
-:root {
-  --bg:        #0a0a0c;
-  --surface:   #121216;
-  --border:    #1e1c1a;
-  --text:      #e4e0da;
-  --text-dim:  #7a7670;
-  --red:       #d4443c;
-  --red-glow:  rgba(212,68,60,0.15);
-  --warm:      #c4a06a;
-  --radius:    4px;
-  --sidebar-w: 260px;
-  --transition: 0.25s cubic-bezier(0.4,0,0.2,1);
-}
-
-* { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  display: flex;
-  min-height: 100vh;
-}
-
-/* ==========================================================================
-   SIDEBAR
-   ========================================================================== */
-
-.sidebar {
-  position: fixed; top:0; left:0; bottom:0;
-  width: var(--sidebar-w);
-  background: var(--surface);
-  border-right: 1px solid var(--border);
-  z-index: 100;
-  display: flex; flex-direction: column;
-  transition: transform var(--transition);
-  overflow-y: auto;
-}
-.sidebar.hidden { transform: translateX(calc(var(--sidebar-w) * -1)); }
-
-.sidebar-header {
-  padding: 28px 24px 20px;
-  border-bottom: 1px solid var(--border);
-}
-.sidebar-header h2 {
-  font-size: 0.7rem; font-weight:600; letter-spacing:3px;
-  text-transform: uppercase; color: var(--text-dim);
-  display: flex; align-items:center; gap: 10px;
-}
-.rec-dot {
-  width: 8px; height: 8px; background: var(--red);
-  border-radius: 50%; display: inline-block;
-  animation: pulse 2s ease-in-out infinite;
-  flex-shrink: 0;
-}
-@keyframes pulse {
-  0%,100% { opacity:1; box-shadow: 0 0 0 0 var(--red-glow); }
-  50%     { opacity:.6; box-shadow: 0 0 0 6px transparent; }
-}
-
-.sidebar-nav { flex:1; padding: 12px 0; }
-.sidebar-nav a {
-  display: flex; align-items:center; gap: 12px;
-  padding: 10px 24px; text-decoration:none; color: var(--text-dim);
-  font-size: 0.8rem; transition: all var(--transition);
-  border-left: 2px solid transparent;
-}
-.sidebar-nav a:hover { color: var(--text); background: rgba(255,255,255,0.02); }
-.sidebar-nav a.active {
-  color: var(--text); border-left-color: var(--red);
-  background: rgba(212,68,60,0.06);
-}
-.sidebar-nav a .year-tag {
-  font-size: 0.65rem; font-weight:600; letter-spacing:1px;
-  color: var(--red); opacity:0.7; min-width: 32px;
-}
-.sidebar-nav a .show-label {
-  white-space: nowrap; overflow:hidden; text-overflow:ellipsis;
-  font-weight: 500;
-}
-.sidebar-footer {
-  padding: 16px 24px; border-top: 1px solid var(--border);
-}
-.sidebar-footer a {
-  color: var(--text-dim); text-decoration:none; font-size:0.75rem;
-  transition: color var(--transition);
-}
-.sidebar-footer a:hover { color: var(--text); }
-
-/* Toggle */
-.sidebar-toggle {
-  position: fixed; top: 20px; left: calc(var(--sidebar-w) + 16px);
-  z-index: 200; width: 36px; height: 36px;
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: 50%; color: var(--text-dim); cursor: pointer;
-  display: flex; align-items:center; justify-content:center;
-  font-size: 1.1rem; transition: all var(--transition);
-  backdrop-filter: blur(8px);
-}
-.sidebar-toggle:hover { color: var(--text); border-color: var(--text-dim); }
-.sidebar-toggle.shifted { left: 16px; }
-
-/* ==========================================================================
-   MAIN CONTENT
-   ========================================================================== */
-
-.main {
-  margin-left: var(--sidebar-w);
-  flex:1; min-width:0;
-  transition: margin var(--transition);
-}
-.main.expanded { margin-left: 0; }
-
-/* Hero */
-.hero {
-  padding: 100px 40px 60px; text-align:center;
-  max-width: 800px; margin: 0 auto;
-}
-.hero h1 {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  font-weight: 800; letter-spacing: -2px; line-height:1.05;
-  color: var(--text); margin-bottom: 16px;
-}
-.hero h1 .dot { color: var(--red); }
-.hero .subtitle {
-  font-size: 1rem; color: var(--text-dim); max-width: 420px;
-  margin: 0 auto; line-height:1.7;
-}
-
-/* Show sections */
-.shows { max-width: 1400px; margin:0 auto; padding: 0 32px 100px; }
-.show-section { margin-bottom: 72px; scroll-margin-top: 24px; }
-
-.show-header {
-  display: flex; align-items:baseline; gap: 16px;
-  margin-bottom: 20px; padding: 0 4px;
-}
-.show-date-tag {
-  font-size: 0.68rem; font-weight:700; letter-spacing:2.5px;
-  text-transform: uppercase; color: var(--red);
-  white-space: nowrap; flex-shrink:0;
-}
-.show-title-text {
-  font-size: 1.35rem; font-weight: 700; letter-spacing: -0.4px;
-  color: var(--text);
-}
-.show-line {
-  flex:1; height:1px; background: var(--border); min-width:20px;
-  align-self:center;
-}
-
-/* Photo Grid */
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 4px;
-}
-.photo-item {
-  position:relative; overflow:hidden; cursor:pointer;
-  background: var(--surface); aspect-ratio: 3/2;
-  transition: transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94),
-              box-shadow 0.35s ease;
-}
-.photo-item:hover {
-  transform: scale(1.025); z-index:2;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.7);
-}
-.photo-item img {
-  width:100%; height:100%; object-fit:cover; display:block;
-  transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);
-}
-.photo-item:hover img { transform: scale(1.08); }
-.photo-item::after {
-  content:''; position:absolute; inset:0;
-  background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 40%);
-  opacity:0; transition: opacity 0.3s;
-}
-.photo-item:hover::after { opacity:1; }
-.photo-item .zoom-hint {
-  position:absolute; bottom:10px; right:10px; z-index:3;
-  width:28px; height:28px; background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(6px); border-radius:50%;
-  display:flex; align-items:center; justify-content:center;
-  color: #fff; font-size: 0.7rem; opacity:0;
-  transition: opacity 0.3s;
-}
-.photo-item:hover .zoom-hint { opacity:1; }
-
-/* Video label + grid */
-.video-section-label {
-  font-size: 0.62rem; font-weight:600; letter-spacing:3px;
-  text-transform: uppercase; color: var(--text-dim);
-  margin: 28px 4px 10px;
-}
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 6px;
-}
-.video-card {
-  position:relative; overflow:hidden; cursor:pointer;
-  background: var(--surface); aspect-ratio: 16/9;
-  transition: transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94);
-}
-.video-card:hover {
-  transform: scale(1.025); z-index:2;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.7);
-}
-.video-card img {
-  width:100%; height:100%; object-fit:cover; display:block;
-  transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);
-}
-.video-card:hover img { transform: scale(1.08); }
-.video-play {
-  position:absolute; inset:0; display:flex; align-items:center;
-  justify-content:center; background: rgba(0,0,0,0.25);
-  transition: background 0.3s;
-}
-.video-card:hover .video-play { background: rgba(0,0,0,0.45); }
-.play-icon {
-  width: 52px; height: 52px; border-radius:50%;
-  background: rgba(255,255,255,0.92);
-  display:flex; align-items:center; justify-content:center;
-  transition: transform 0.3s;
-}
-.video-card:hover .play-icon { transform: scale(1.1); }
-.play-icon::after {
-  content:''; display:block; width:0; height:0;
-  border-style:solid; border-width: 9px 0 9px 16px;
-  border-color: transparent transparent transparent #111;
-  margin-left: 3px;
-}
-
-/* ==========================================================================
-   LIGHTBOX
-   ========================================================================== */
-.lightbox {
-  display:none; position:fixed; inset:0; z-index:9999;
-  background: rgba(0,0,0,0.95); flex-direction:column;
-  align-items:center; justify-content:center;
-}
-.lightbox.active { display:flex; }
-.lb-close {
-  position:absolute; top:20px; right:24px; z-index:10001;
-  color: #777; font-size: 32px; cursor:pointer;
-  width:44px; height:44px; display:flex; align-items:center;
-  justify-content:center; border-radius:50%;
-  transition: all 0.3s; line-height:1;
-}
-.lb-close:hover { color:#fff; background: rgba(255,255,255,0.08); }
-.lb-nav {
-  position:absolute; top:50%; transform:translateY(-50%);
-  color: #777; font-size: 48px; cursor:pointer; z-index:10001;
-  padding: 20px 12px; user-select:none; transition:color 0.3s;
-}
-.lb-nav:hover { color:#fff; }
-.lb-prev { left:8px; } .lb-next { right:8px; }
-.lb-img-wrap {
-  display:flex; align-items:center; justify-content:center;
-  width:100%; height:100%; padding: 64px;
-}
-.lb-img-wrap img {
-  max-width:92%; max-height:88vh; object-fit:contain;
-  border-radius:2px; box-shadow:0 8px 48px rgba(0,0,0,0.7);
-}
-.lb-loader {
-  width:36px; height:36px; border:2px solid rgba(255,255,255,0.1);
-  border-top-color: rgba(255,255,255,0.5); border-radius:50%;
-  animation:spin 0.7s linear infinite;
-}
-@keyframes spin { to{transform:rotate(360deg);} }
-.lb-counter {
-  position:absolute; bottom:28px; left:50%; transform:translateX(-50%);
-  color: #555; font-size:0.8rem;
-}
-
-/* Video Modal */
-.video-modal {
-  display:none; position:fixed; inset:0; z-index:9999;
-  background: rgba(0,0,0,0.95); flex-direction:column;
-  align-items:center; justify-content:center;
-}
-.video-modal.active { display:flex; }
-.vm-close {
-  position:absolute; top:20px; right:24px; z-index:10001;
-  color: #777; font-size:32px; cursor:pointer;
-  width:44px; height:44px; display:flex; align-items:center;
-  justify-content:center; border-radius:50%;
-  transition: all 0.3s; line-height:1;
-}
-.vm-close:hover { color:#fff; background:rgba(255,255,255,0.08); }
-.vm-wrap {
-  display:flex; align-items:center; justify-content:center;
-  width:100%; height:100%; padding:64px;
-}
-.vm-wrap video {
-  max-width:92%; max-height:88vh; border-radius:3px;
-  box-shadow:0 8px 48px rgba(0,0,0,0.7); outline:none;
-}
-
-/* ==========================================================================
-   RESPONSIVE
-   ========================================================================== */
-@media (max-width: 900px) {
-  .sidebar { transform: translateX(calc(var(--sidebar-w) * -1)); }
-  .sidebar.open { transform: translateX(0); }
-  .main { margin-left:0; }
-  .sidebar-toggle { left:16px; }
-  .hero { padding: 80px 24px 48px; }
-}
-
-@media (max-width: 640px) {
-  .hero h1 { font-size: 2rem; letter-spacing: -1px; }
-  .photo-grid { grid-template-columns: repeat(2, 1fr); gap:3px; }
-  .video-grid { grid-template-columns: 1fr; }
-  .show-section { margin-bottom: 48px; }
-  .shows { padding: 0 12px 60px; }
-  .lb-img-wrap, .vm-wrap { padding: 20px; }
-  .lb-nav { font-size:32px; padding:10px 6px; }
-}
-</style>
-
-<!-- ====================================================================== -->
-<!-- SIDEBAR                                                                -->
-<!-- ====================================================================== -->
-<aside class="sidebar" id="sidebar">
-  <div class="sidebar-header">
-    <h2><span class="rec-dot"></span> Archive</h2>
-  </div>
-  <nav class="sidebar-nav" id="sidebar-nav">
-    {% assign shows = site.data.live %}
-    {% for show in shows %}
-      {% assign year = show.date | date: "%Y" %}
-      <a href="#show-{{ forloop.index }}" data-year="{{ year }}">
-        <span class="year-tag">{{ year }}</span>
-        <span class="show-label">{{ show.title }}</span>
-      </a>
-    {% endfor %}
-  </nav>
-  <div class="sidebar-footer">
-    <a href="{{ '/' | relative_url }}">← Back to Homepage</a>
-  </div>
-</aside>
-
-<!-- Sidebar toggle -->
-<button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle sidebar">&equiv;</button>
-
-<!-- ====================================================================== -->
-<!-- MAIN CONTENT                                                           -->
-<!-- ====================================================================== -->
-<div class="main" id="main-content">
-  <section class="hero">
-    <h1>Live<span class="dot">.</span></h1>
-    <p class="subtitle">Rock shows, livehouses, music festivals. Moments captured from the crowd, stage dives to encores.</p>
-  </section>
-
-  <section class="shows">
-  {% assign shows = site.data.live %}
-  {% if shows.size == 0 %}
-    <div style="text-align:center;padding:80px 24px;color:var(--text-dim);"><p>No shows yet.</p></div>
-  {% endif %}
-
-  {% for show in shows %}
-    {% assign year = show.date | date: "%Y" %}
-    <div class="show-section" id="show-{{ forloop.index }}">
-      <div class="show-header">
-        <span class="show-date-tag">{{ show.date | date: "%Y.%m.%d" }}</span>
-        <span class="show-title-text">{{ show.title }}</span>
-        <span class="show-line"></span>
-      </div>
-
-      {% if show.photos %}
-      <div class="photo-grid"
-           data-folder="{{ show.folder }}"
-           data-photos='{{ show.photos | jsonify }}'>
-        {% for photo in show.photos %}
-          <div class="photo-item" data-index="{{ forloop.index0 }}" data-filename="{{ photo }}">
-            <img src="https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/resolve/main/{{ show.folder }}/thumbnails/{{ photo }}"
-                 alt="{{ show.title }} — photo {{ forloop.index }}"
-                 loading="lazy"
-                 onerror="this.src='https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/resolve/main/{{ show.folder }}/{{ photo }}';">
-            <span class="zoom-hint">+</span>
-          </div>
-        {% endfor %}
-      </div>
-      {% endif %}
-
-      {% if show.videos %}
-      <div class="video-section-label">Footage</div>
-      <div class="video-grid"
-           data-vfolder="{{ show.video_folder | default: show.folder }}"
-           data-videos='{{ show.videos | jsonify }}'>
-        {% for vid in show.videos %}
-          <div class="video-card" data-vindex="{{ forloop.index0 }}">
-            <img data-folder="{{ show.video_folder | default: show.folder }}"
-                 data-poster="{{ vid.poster }}"
-                 alt="{{ vid.file }}"
-                 loading="lazy"
-                 onerror="this.style.background='linear-gradient(135deg,#18181c,#121216)';">
-            <div class="video-play"><span class="play-icon"></span></div>
-          </div>
-        {% endfor %}
-      </div>
-      {% endif %}
+{% assign shows = site.data.live %}
+{% assign film_count = 0 %}
+{% assign photo_count = 0 %}
+{% for show in shows %}
+{% assign film_count = film_count | plus: show.videos.size %}
+{% assign photo_count = photo_count | plus: show.photos.size %}
+{% endfor %}
+{% assign hf = 'https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/resolve/main/' %}
+<a class="skip-link" href="#archive">Skip to the archive</a>
+<header class="site-header" id="top">
+<div class="header-inner shell">
+  <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="edzee3000 homepage">
+<span class="wordmark-symbol" aria-hidden="true">
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+</span>
+<span class="wordmark-name">EDZEE3000<small>LIVE / ARCHIVE</small>
+</span>
+</a>
+  <span class="header-note eyebrow">Collected from the crowd.</span>
+  <div class="header-actions">
+<a class="home-link" href="{{ '/' | relative_url }}">Homepage <span aria-hidden="true">↗</span>
+</a>
+<button class="theme-toggle js-only" id="theme-toggle" type="button" aria-label="切换到浅色模式" aria-pressed="false" title="切换到浅色模式">
+<span class="theme-icon" aria-hidden="true">
+</span>
+<span class="theme-label">Light mode</span>
+</button>
+</div>
+</div>
+</header>
+<main class="shell">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-topline eyebrow">
+<span>
+<span class="status-dot" aria-hidden="true">
+</span>A personal music journal</span>
+<span>{{ shows.last.date | date: "%Y" }} — {{ shows.first.date | date: "%Y" }}</span>
+</div>
+    <div class="hero-grid">
+<div class="hero-copy">
+      <p class="hero-kicker eyebrow">For the moments that stay.</p>
+<h1 id="hero-title">Long after<br>
+<em>the encore.</em>
+</h1>
+<p class="hero-caption" lang="zh">散场之后，回声仍在。</p>
+      <p class="hero-description">A few nights, a thousand little moments.<br>Live music, through my eyes and from<br>somewhere in the crowd.</p>
+<a class="archive-link" href="#archive">Explore the archive <span aria-hidden="true">↓</span>
+</a>
     </div>
-  {% endfor %}
+<figure class="hero-figure">
+      <span class="frame-marker" aria-hidden="true">FIELD NOTES / JIAXING, 2026</span>
+      <a class="hero-frame editorial-photo" href="{{ '/images/live/wangwen-blue.webp' | relative_url }}" data-title="惘闻×String Orchestra · 嘉兴泡泡岛音乐节" aria-label="放大惘闻现场照片">
+<img src="{{ '/images/live/wangwen-blue.webp' | relative_url }}" alt="深蓝舞台上，白色光束照向惘闻与弦乐团" width="1920" height="1080" fetchpriority="high">
+<span class="hero-stamp">04 OCT 2026 / WANG WEN</span>
+<span class="hero-play">
+<span class="photo-enlarge" aria-hidden="true">↗</span>IN THE MOMENT</span>
+</a>
+      <figcaption>
+<strong>惘闻 × String Orchestra</strong>
+<span>Jiaxing / 04.10.2026</span>
+</figcaption>
+    </figure>
+</div>
+    <div class="archive-stats" aria-label="Archive totals">
+<div class="stat">
+<b>{{ shows.size }}</b>
+<span>Live sets</span>
+</div>
+<div class="stat">
+<b>{{ film_count }}</b>
+<span>Films</span>
+</div>
+<div class="stat">
+<b>{{ photo_count }}</b>
+<span>Archive photos</span>
+</div>
+<span class="stats-note">Good music. Real memories.</span>
+</div>
   </section>
-
-  <footer style="text-align:center;padding:40px 24px;color:var(--text-dim);font-size:0.75rem;border-top:1px solid var(--border);max-width:1400px;margin:0 32px;">
-    Photos &amp; videos stored on <a href="https://huggingface.co/datasets/edzee3000/LiveVideoPhoto" target="_blank" rel="noopener" style="color:var(--text-dim);">Hugging Face</a> &nbsp;·&nbsp; <a href="{{ '/' | relative_url }}" style="color:var(--text-dim);">Homepage</a>
-  </footer>
+  <section id="archive" aria-labelledby="archive-title">
+    <div class="archive-intro">
+<div>
+<p class="eyebrow">The collection / 现场存档</p>
+<h2 id="archive-title">Nights to remember.</h2>
 </div>
-
-<!-- ====================================================================== -->
-<!-- LIGHTBOX                                                               -->
-<!-- ====================================================================== -->
-<div class="lightbox" id="lightbox">
-  <span class="lb-close" id="lb-close">&times;</span>
-  <span class="lb-nav lb-prev" id="lb-prev">&#8249;</span>
-  <span class="lb-nav lb-next" id="lb-next">&#8250;</span>
-  <div class="lb-img-wrap">
-    <div class="lb-loader" id="lb-loader"></div>
-    <img id="lb-img" alt="" style="display:none;">
+<div class="archive-tools js-only">
+      <label class="search-wrap">
+<svg viewBox="0 0 20 20" aria-hidden="true">
+<circle cx="8" cy="8" r="5.5"/>
+<path d="m12.5 12.5 5 5"/>
+</svg>
+<span class="sr-only">搜索艺人、场地或日期</span>
+<input id="archive-search" type="search" placeholder="Search artist, venue, year…" autocomplete="off">
+</label>
+      <div class="year-filters" id="year-filters" role="group" aria-label="按年份筛选">
+<button class="year-filter" type="button" data-year="all" aria-pressed="true">All years</button>{% assign previous_year = '' %}
+{% for show in shows %}
+{% assign year = show.date | date: "%Y" %}
+{% unless year == previous_year %}<button class="year-filter" type="button" data-year="{{ year }}" aria-pressed="false">{{ year }}</button>{% endunless %}
+{% assign previous_year = year %}
+{% endfor %}</div>
+    </div>
+</div>
+    <p class="sr-only" id="filter-status" role="status" aria-live="polite">
+</p>
+    <div class="archive-layout">
+<aside class="archive-index" aria-label="演出索引">
+<div class="index-heading">
+<span>SETLIST / 目录</span>
+<span id="index-count">{{ shows.size }} ENTRIES</span>
+</div>
+<nav>
+      {% for show in shows %}
+{% assign artist = show.title | split: ' @ ' | first %}<a class="index-link" href="#show-{{ forloop.index }}" data-show="show-{{ forloop.index }}">
+<span class="index-number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+<span>
+<span class="index-artist">{{ artist | escape }}</span>
+<span class="index-date">{{ show.date | date: "%d.%m.%Y" }}</span>
+</span>
+</a>{% endfor %}
+    </nav>
+<p class="index-footnote">Some things sound<br>better remembered.</p>
+</aside>
+<div class="shows">
+    {% for show in shows %}
+{% assign show_index = forloop.index %}
+{% assign artist = show.title | split: ' @ ' | first %}
+{% assign venue = show.title | split: ' @ ' | last %}
+      <article class="show-section" id="show-{{ show_index }}" data-year="{{ show.date | date: '%Y' }}" data-search="{{ show.title | escape }} {{ show.date | date: '%Y-%m-%d' }}" data-title="{{ artist | escape }}" aria-labelledby="show-title-{{ show_index }}">
+        <div class="show-topline eyebrow">
+<span>SET {{ show_index | prepend: '0' | slice: -2, 2 }} / {{ show.date | date: "%Y" }}</span>
+<span>{{ show.videos.size }} FILMS{% if show.photos %} · {{ show.photos.size }} PHOTOS{% endif %}</span>
+</div>
+        <header class="show-header">
+<div>
+<h3 id="show-title-{{ show_index }}">{{ artist | escape }}</h3>
+<p class="show-venue">{{ venue | escape }}</p>
+</div>
+<time class="date-block" datetime="{{ show.date | date: '%Y-%m-%d' }}">
+<b>{{ show.date | date: "%d" }}</b>
+<span>{{ show.date | date: "%b" | upcase }} / {{ show.date | date: "%Y" }}</span>
+</time>
+</header>
+        {% if show.videos %}<div class="video-grid media-grid" id="films-{{ show_index }}" data-kind="video" data-title="{{ artist | escape }}">
+          {% for vid in show.videos %}
+{% assign preview_key = show.video_folder | append: '/' | append: vid.file %}
+{% assign preview_url = site.data.live_previews[preview_key] %}<a class="media-card video-card" href="{{ hf }}{{ show.video_folder | escape }}/{{ vid.file | escape }}" data-folder="{{ show.video_folder | escape }}" data-file="{{ vid.file | escape }}" data-poster="{{ vid.poster | escape }}" data-index="{{ forloop.index0 }}" {% if forloop.index > 4 %}data-extra{% endif %} aria-label="播放 {{ artist | escape }}，视频 {{ forloop.index }}">
+            <span class="media-frame">
+<img src="{% if preview_url %}{{ preview_url | relative_url }}{% else %}{{ hf }}{{ show.video_folder | escape }}/posters/{{ vid.poster | escape }}{% endif %}" {% if preview_url %}data-local-preview{% endif %} data-folder="{{ show.video_folder | escape }}/posters" data-file="{{ vid.poster | escape }}" alt="{{ artist | escape }} 现场片段 {{ forloop.index }}" loading="lazy" decoding="async" width="960" height="540">
+<span class="frame-index" aria-hidden="true">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+<span class="circle-play" aria-hidden="true">
+</span>
+</span>
+<span class="media-caption">
+<span>LIVE FILM / {{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+<span class="caption-arrow" aria-hidden="true">↗</span>
+</span>
+          </a>{% endfor %}</div>{% if show.videos.size > 4 %}<button class="expand-button js-only" type="button" aria-controls="films-{{ show_index }}" aria-expanded="false" data-total="{{ show.videos.size }}" data-type="films">
+<span class="expand-label">View all {{ show.videos.size }} films</span>
+<span class="expand-symbol" aria-hidden="true">+</span>
+</button>{% endif %}
+{% endif %}
+        {% if show.photos %}<p class="media-label">STILLS / 瞬间</p>
+<div class="photo-grid media-grid" id="photos-{{ show_index }}" data-kind="photo" data-title="{{ artist | escape }}">
+          {% for photo in show.photos %}<a class="media-card photo-card" href="{{ hf }}{{ show.folder | escape }}/{{ photo | escape }}" data-folder="{{ show.folder | escape }}" data-file="{{ photo | escape }}" data-index="{{ forloop.index0 }}" {% if forloop.index > 6 %}data-extra{% endif %} aria-label="查看 {{ artist | escape }}，照片 {{ forloop.index }}">
+<span class="media-frame">
+<img src="{{ hf }}{{ show.folder | escape }}/thumbnails/{{ photo | escape }}" data-folder="{{ show.folder | escape }}/thumbnails" data-file="{{ photo | escape }}" data-fallback-folder="{{ show.folder | escape }}" alt="{{ artist | escape }} 现场照片 {{ forloop.index }}" loading="lazy" decoding="async" width="960" height="640">
+<span class="photo-zoom" aria-hidden="true">+</span>
+</span>
+</a>{% endfor %}
+        </div>{% if show.photos.size > 6 %}<button class="expand-button js-only" type="button" aria-controls="photos-{{ show_index }}" aria-expanded="false" data-total="{{ show.photos.size }}" data-type="photos">
+<span class="expand-label">View all {{ show.photos.size }} photos</span>
+<span class="expand-symbol" aria-hidden="true">+</span>
+</button>{% endif %}
+{% endif %}
+      </article>{% endfor %}
+      <div class="empty-state" id="empty-state" hidden>
+<p class="eyebrow muted">Nothing here, yet.</p>
+<h3>No matching nights.</h3>
+<p class="muted">试试其他艺人、场地或年份。</p>
+<button type="button" id="clear-filters">Clear filters</button>
+</div>
+      {% if shows.size == 0 %}<p>The first night is still to come.</p>{% endif %}
+    </div>
+</div>
+  </section>
+  <section class="visual-notes" aria-labelledby="notes-title">
+<div class="notes-heading">
+<span class="eyebrow muted">Between the songs / 光的切片</span>
+<h2 id="notes-title">Light becomes memory.</h2>
+</div>
+<div class="notes-grid">
+    <figure>
+<a class="editorial-photo" href="{{ '/images/live/wangwen-silhouette.webp' | relative_url }}" data-title="惘闻×String Orchestra · 光与剪影">
+<img src="{{ '/images/live/wangwen-silhouette.webp' | relative_url }}" alt="惘闻与弦乐团的剪影，身后是浅色同心光环" loading="lazy" width="1920" height="1080">
+</a>
+<figcaption>
+<span>01 / SILHOUETTES</span>
+<span>惘闻 × String Orchestra</span>
+</figcaption>
+</figure>
+    <figure>
+<a class="editorial-photo" href="{{ '/images/live/fazi-amber.webp' | relative_url }}" data-title="法兹×Long Arm · 橙色共振">
+<img src="{{ '/images/live/fazi-amber.webp' | relative_url }}" alt="法兹现场舞台，橙色几何光线在黑暗中相交" loading="lazy" width="1920" height="1080">
+</a>
+<figcaption>
+<span>02 / RESONANCE</span>
+<span>法兹 × Long Arm</span>
+</figcaption>
+</figure>
   </div>
-  <span class="lb-counter" id="lb-counter"></span>
+</section>
+</main>
+<footer class="site-footer shell">
+<div class="footer-top">
+<p class="footer-title">See you in the crowd.</p>
+<a class="back-to-top" href="#top" aria-label="回到顶部">↑</a>
 </div>
-
-<!-- Video Modal -->
-<div class="video-modal" id="video-modal">
-  <span class="vm-close" id="vm-close">&times;</span>
-  <div class="vm-wrap">
-    <video id="vm-video" controls playsinline autoplay></video>
-  </div>
+<div class="footer-bottom">
+<span>EDZEE3000 / A PERSONAL LIVE ARCHIVE</span>
+<span>Recorded with love. &nbsp; <a href="https://huggingface.co/datasets/edzee3000/LiveVideoPhoto" target="_blank" rel="noopener">Explore the full archive ↗</a>
+</span>
 </div>
-
-<!-- ====================================================================== -->
-<!-- SCRIPTS                                                                -->
-<!-- ====================================================================== -->
-<script>
-(function() {
-  var HF = 'https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/resolve/main/';
-  function enc(p) { return p.split('/').map(encodeURIComponent).join('/'); }
-  function full(folder, file) { return HF + enc(folder) + '/' + encodeURIComponent(file); }
-
-  // =========================================================================
-  // Sidebar toggle
-  // =========================================================================
-  var sidebar = document.getElementById('sidebar');
-  var toggle = document.getElementById('sidebar-toggle');
-  var main = document.getElementById('main-content');
-  toggle.addEventListener('click', function() {
-    sidebar.classList.toggle('hidden');
-    main.classList.toggle('expanded');
-    toggle.classList.toggle('shifted');
-    // On mobile, use 'open' class
-    if (window.innerWidth <= 900) {
-      sidebar.classList.toggle('open');
-    }
-  });
-
-  // =========================================================================
-  // Active sidebar link on scroll
-  // =========================================================================
-  var navLinks = document.querySelectorAll('.sidebar-nav a');
-  var sections = document.querySelectorAll('.show-section');
-  function updateActive() {
-    var scrollY = window.scrollY + 120;
-    var current = null;
-    sections.forEach(function(s) {
-      if (s.offsetTop <= scrollY) current = s.id;
-    });
-    navLinks.forEach(function(a) {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-    });
-  }
-  window.addEventListener('scroll', updateActive, {passive:true});
-  updateActive();
-
-  // =========================================================================
-  // Video poster images
-  // =========================================================================
-  document.querySelectorAll('.video-card img').forEach(function(img) {
-    var folder = img.getAttribute('data-folder');
-    var poster = img.getAttribute('data-poster');
-    if (folder && poster) {
-      img.src = HF + enc(folder) + '/posters/' + encodeURIComponent(poster);
-    }
-  });
-
-  // =========================================================================
-  // Photo Lightbox
-  // =========================================================================
-  var lb = document.getElementById('lightbox');
-  var lbImg = document.getElementById('lb-img');
-  var lbLoader = document.getElementById('lb-loader');
-  var lbCounter = document.getElementById('lb-counter');
-  var photos = [], idx = 0;
-
-  function openLB(p, i) { photos = p; idx = i; showImg(photos[idx]); lb.classList.add('active'); document.body.style.overflow='hidden'; updateCounter(); }
-  function closeLB() { lb.classList.remove('active'); document.body.style.overflow=''; lbImg.style.display='none'; lbLoader.style.display='block'; }
-  function showImg(url) { lbImg.style.display='none'; lbLoader.style.display='block'; lbImg.onload=function(){lbLoader.style.display='none'; lbImg.style.display='block';}; lbImg.onerror=function(){lbLoader.style.display='none'; lbImg.src='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="130"><rect fill="%23111" width="200" height="130"/><text fill="%23555" x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="14">Failed</text></svg>';}; lbImg.src = url; }
-  function updateCounter() {
-    if(photos.length<=1){lbCounter.textContent='';document.getElementById('lb-prev').style.display='none';document.getElementById('lb-next').style.display='none';}
-    else {lbCounter.textContent=(idx+1)+' / '+photos.length;document.getElementById('lb-prev').style.display='';document.getElementById('lb-next').style.display='';}
-  }
-  function prevLB() { idx=(idx-1+photos.length)%photos.length; showImg(photos[idx]); updateCounter(); }
-  function nextLB() { idx=(idx+1)%photos.length; showImg(photos[idx]); updateCounter(); }
-
-  document.getElementById('lb-close').addEventListener('click',closeLB);
-  document.getElementById('lb-prev').addEventListener('click',function(e){e.stopPropagation();prevLB();});
-  document.getElementById('lb-next').addEventListener('click',function(e){e.stopPropagation();nextLB();});
-  lb.addEventListener('click',function(e){if(e.target===lb)closeLB();});
-  document.addEventListener('keydown',function(e){if(!lb.classList.contains('active'))return;if(e.key==='Escape')closeLB();if(e.key==='ArrowLeft')prevLB();if(e.key==='ArrowRight')nextLB();});
-
-  document.querySelectorAll('.photo-grid').forEach(function(g){
-    var folder=g.getAttribute('data-folder'), list=JSON.parse(g.getAttribute('data-photos'));
-    g.addEventListener('click',function(e){var it=e.target.closest('.photo-item');if(!it)return;var i=parseInt(it.getAttribute('data-index'),10);openLB(list.map(function(f){return full(folder,f);}),i);});
-  });
-
-  // =========================================================================
-  // Video playback
-  // =========================================================================
-  var vm=document.getElementById('video-modal'), vmVid=document.getElementById('vm-video');
-  function closeVM(){vm.classList.remove('active');document.body.style.overflow='';vmVid.pause();vmVid.src='';}
-  document.getElementById('vm-close').addEventListener('click',closeVM);
-  vm.addEventListener('click',function(e){if(e.target===vm||e.target.id==='vm-wrap')closeVM();});
-  document.addEventListener('keydown',function(e){if(!vm.classList.contains('active'))return;if(e.key==='Escape')closeVM();});
-
-  document.querySelectorAll('.video-grid').forEach(function(g){
-    var vfolder=g.getAttribute('data-vfolder'), list=JSON.parse(g.getAttribute('data-videos'));
-    g.addEventListener('click',function(e){var card=e.target.closest('.video-card');if(!card)return;var i=parseInt(card.getAttribute('data-vindex'),10);vmVid.src=full(vfolder,list[i].file);vm.classList.add('active');document.body.style.overflow='hidden';vmVid.play().catch(function(){});});
-  });
-
-})();
-</script>
+</footer>
+<dialog class="media-dialog" id="media-dialog" aria-labelledby="dialog-title">
+<div class="dialog-heading">
+<h2 id="dialog-title">Live recording</h2>
+<button class="dialog-close" id="dialog-close" type="button" aria-label="关闭播放器" autofocus>×</button>
+</div>
+<div class="dialog-stage">
+<video id="dialog-video" controls playsinline preload="metadata" hidden>
+</video>
+<img id="dialog-photo" alt="" hidden>
+</div>
+<p class="media-message" id="media-message" role="status" aria-live="polite">
+</p>
+<div class="dialog-bottom">
+<div class="dialog-navigation">
+<button id="dialog-prev" type="button" aria-label="上一个">←</button>
+<span id="dialog-counter">
+</span>
+<button id="dialog-next" type="button" aria-label="下一个">→</button>
+</div>
+<a class="dialog-original" id="dialog-original" href="#" target="_blank" rel="noopener">Open original ↗</a>
+</div>
+</dialog>
