@@ -1,6 +1,7 @@
 # Live Music Performance Archive
 # Each show entry contains:
-#   date:         YYYY-MM-DD format (used for sorting)
+# Entries are newest-first; same-day festival sets are latest-first.
+#   date:         YYYY-MM-DD format (display date)
 #   title:        Show/artist name
 #   folder:       Path in the HF dataset for photos (without trailing slash)
 #   video_folder: Path in the HF dataset for videos (without trailing slash)
@@ -10,6 +11,64 @@
 #
 # HF raw URL pattern:
 #   https://huggingface.co/datasets/edzee3000/LiveVideoPhoto/resolve/main/{folder}/{filename}
+
+- date: 2026-10-04
+  title: "梁博 @ 嘉兴泡泡岛音乐节"
+  video_folder: "20261004嘉兴泡泡岛音乐节梁博/视频"
+  videos:
+    - file: "DJI_20261004211414_0152_D.MP4"
+      poster: "DJI_20261004211414_0152_D.jpg"
+    - file: "DJI_20261004213408_0153_D.MP4"
+      poster: "DJI_20261004213408_0153_D.jpg"
+
+- date: 2026-10-04
+  title: "惘闻×String Orchestra @ 嘉兴泡泡岛音乐节"
+  video_folder: "20261004嘉兴泡泡岛音乐节惘闻×String Orchestra/视频"
+  videos:
+    - file: "DJI_20261004194523_0142_D.MP4"
+      poster: "DJI_20261004194523_0142_D.jpg"
+    - file: "DJI_20261004194717_0143_D.MP4"
+      poster: "DJI_20261004194717_0143_D.jpg"
+    - file: "DJI_20261004195650_0144_D.MP4"
+      poster: "DJI_20261004195650_0144_D.jpg"
+    - file: "DJI_20261004195952_0145_D.MP4"
+      poster: "DJI_20261004195952_0145_D.jpg"
+    - file: "DJI_20261004200201_0146_D.MP4"
+      poster: "DJI_20261004200201_0146_D.jpg"
+    - file: "DJI_20261004201113_0147_D.MP4"
+      poster: "DJI_20261004201113_0147_D.jpg"
+    - file: "DJI_20261004201930_0148_D.MP4"
+      poster: "DJI_20261004201930_0148_D.jpg"
+    - file: "DJI_20261004202637_0149_D.MP4"
+      poster: "DJI_20261004202637_0149_D.jpg"
+    - file: "DJI_20261004204623_0150_D.MP4"
+      poster: "DJI_20261004204623_0150_D.jpg"
+    - file: "DJI_20261004205344_0151_D.MP4"
+      poster: "DJI_20261004205344_0151_D.jpg"
+    - file: "dji_export_20261005_013725_1791135445433_editor.mp4"
+      poster: "dji_export_20261005_013725_1791135445433_editor.jpg"
+
+- date: 2026-10-04
+  title: "法兹×Long Arm @ 嘉兴泡泡岛音乐节"
+  video_folder: "20261004嘉兴泡泡岛音乐节法兹×Long Arm/视频"
+  videos:
+    - file: "DJI_20261004173918_0138_D.MP4"
+      poster: "DJI_20261004173918_0138_D.jpg"
+    - file: "DJI_20261004174254_0139_D.MP4"
+      poster: "DJI_20261004174254_0139_D.jpg"
+    - file: "DJI_20261004182408_0140_D.MP4"
+      poster: "DJI_20261004182408_0140_D.jpg"
+    - file: "DJI_20261004183205_0141_D.MP4"
+      poster: "DJI_20261004183205_0141_D.jpg"
+
+- date: 2026-10-04
+  title: "时过夏末 @ 嘉兴泡泡岛音乐节"
+  video_folder: "20261004嘉兴泡泡岛音乐节时过夏末/视频"
+  videos:
+    - file: "DJI_20261004145942_0136_D.MP4"
+      poster: "DJI_20261004145942_0136_D.jpg"
+    - file: "DJI_20261004154411_0137_D.MP4"
+      poster: "DJI_20261004154411_0137_D.jpg"
 
 - date: 2026-06-13
   title: "River Music Festival (河流音乐节) @ 徐州马陵山花厅部落"
@@ -110,6 +169,11 @@
       poster: "DJI_20260611213004_0063_D.jpg"
     - file: "dji_export_20260612_115521_1781236521853_editor.mp4"
       poster: "dji_export_20260612_115521_1781236521853_editor.jpg"
+
+    - file: "dji_export_20260606_193500_1780745700027_editor.mp4"
+      poster: "dji_export_20260606_193500_1780745700027_editor.jpg"
+    - file: "dji_export_20260612_122644_1781238404876_editor.mp4"
+      poster: "dji_export_20260612_122644_1781238404876_editor.jpg"
 
 - date: 2026-04-19
   title: "Deca Joins @ 南京1701"

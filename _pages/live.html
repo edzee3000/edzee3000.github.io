@@ -341,7 +341,7 @@ body {
     <h2><span class="rec-dot"></span> Archive</h2>
   </div>
   <nav class="sidebar-nav" id="sidebar-nav">
-    {% assign shows = site.data.live | sort: "date" | reverse %}
+    {% assign shows = site.data.live %}
     {% for show in shows %}
       {% assign year = show.date | date: "%Y" %}
       <a href="#show-{{ forloop.index }}" data-year="{{ year }}">
@@ -368,7 +368,7 @@ body {
   </section>
 
   <section class="shows">
-  {% assign shows = site.data.live | sort: "date" | reverse %}
+  {% assign shows = site.data.live %}
   {% if shows.size == 0 %}
     <div style="text-align:center;padding:80px 24px;color:var(--text-dim);"><p>No shows yet.</p></div>
   {% endif %}
