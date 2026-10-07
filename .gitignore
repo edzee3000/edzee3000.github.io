@@ -18,3 +18,10 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
+
+# Python build/import helpers
+__pycache__/
+
+# Music media is hosted on Hugging Face; never commit generated rasters.
+/assets/music/covers/
+/assets/music/covers-small/

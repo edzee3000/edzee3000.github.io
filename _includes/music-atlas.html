@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="{{ '/assets/css/music-atlas.css' | relative_url }}?v=9">
+<link rel="preconnect" href="https://huggingface.co" crossorigin>
+<main id="music-atlas" data-catalog="{{ '/assets/music/catalog.json' | relative_url }}" data-network="{{ '/assets/music/network.json' | relative_url }}">
+  <nav class="masthead" aria-label="页面导航">
+    <a class="home-link" href="{{ '/' | relative_url }}"><span aria-hidden="true">↖</span> SHIHANG ZHU</a>
+    <span class="masthead-title">A PERSONAL MUSIC ATLAS</span>
+    <a class="playlist-link" href="https://music.163.com/playlist?id=8114560070" target="_blank" rel="noopener noreferrer">网易云歌单 <span aria-hidden="true">↗</span></a>
+  </nav>
+  <header class="intro">
+    <div class="intro-copy">
+      <p class="eyebrow"><span></span> COLLECTION / 001</p>
+      <h1><span>Between</span><span>the <em>echoes.</em></span></h1>
+      <p class="intro-description">声音之间，总有一些隐秘的联系。<br>沿着一首歌，走进另一片音乐。</p>
+    </div>
+    <figure class="intro-artwork">
+      <a class="collage-link" href="https://huggingface.co/datasets/edzee3000/GithubData/resolve/main/homepage-assets/music/last-tide/last-tide-web.webp" target="_blank" rel="noopener noreferrer" aria-label="查看 Last Tide 专辑封面拼图高清图（新窗口）">
+        <img src="https://huggingface.co/datasets/edzee3000/GithubData/resolve/main/homepage-assets/music/last-tide/last-tide-web.webp" width="4096" height="2731" alt="Last Tide：由歌单专辑封面拼成的灰蓝与暖褐色风景" decoding="async" fetchpriority="low">
+      </a>
+      <figcaption><span class="artwork-title">Last Tide</span><span>专辑封面拼图 <span aria-hidden="true">↗</span></span></figcaption>
+    </figure>
+    <div class="intro-aside">
+      <span class="small-label">NOT A STRAIGHT LINE, A CONSTELLATION.</span>
+      <p>有些歌相似，因为它们的声音。<br>有些歌相遇，因为同一种心情。</p>
+      <div class="collection-stats"><div><strong id="total-count">—</strong><span>首收藏</span></div><div><strong id="sample-count">—</strong><span>首星图节点</span></div><div><strong id="group-count">—</strong><span>片探索区域</span></div></div>
+    </div>
+  </header>
+  <section class="atlas-section" aria-label="交互音乐关系图">
+    <div class="atlas-toolbar">
+      <div class="view-switch" role="group" aria-label="浏览方式"><button type="button" id="map-view" class="active" aria-pressed="true">◉ 星图</button><button type="button" id="list-view" aria-pressed="false">☷ 全部歌曲</button></div>
+      <label class="search-box"><span aria-hidden="true">⌕</span><input id="song-search" type="search" autocomplete="off" placeholder="寻找一首歌、一个名字…" aria-label="搜索歌名、歌手或专辑"><kbd>/</kbd></label>
+      <button type="button" class="quiet-button" id="about-toggle" aria-expanded="false" aria-controls="map-about">如何读这张图 <span aria-hidden="true">↗</span></button>
+    </div>
+    <div id="style-panel" class="style-panel" aria-label="多标签风格筛选">
+      <div class="style-panel-heading"><span class="small-label">THE STYLE INDEX</span><label><span class="sr-only">搜索风格标签</span><input type="search" id="style-search" placeholder="寻找一种风格…" autocomplete="off"></label></div>
+      <div id="style-options" class="style-options" role="group" aria-label="选择风格标签"></div>
+      <div class="style-panel-bottom"><span id="style-selection">可以多选标签，寻找风格的交汇。</span><button type="button" id="style-clear" data-styles-clear hidden>清除筛选</button><button type="button" id="style-expand" data-styles-expand>全部标签 ↓</button></div>
+    </div>
+    <div id="map-about" class="map-about" hidden>每个节点是一首真实收藏。大小按完整关系网的 PageRank 设置，包含文本候选关系，不代表播放量或喜爱程度。实线表示同专辑或同艺人，虚线表示待核验的编辑关联；声学与歌词资料可通过筛选单独查看；点击连接可查看依据。六个区域保留样稿的编辑探索分组；未完成逐首解读的歌曲按发行与署名关系散布在图中。声学测量和歌词线索作为独立资料层，需主动选择，不代替歌曲解读。默认控制连线与标签数量，放大或点选后展开局部关系。拖动移动、滚轮或双指缩放；点击高亮暂停所有漂浮，再点同一节点恢复此前动态设置。尚未完成逐首全曲试听，片段测量不代表完整乐曲结构或主观解读。</div>
+    <div class="atlas-layout">
+      <div class="explore-area">
+        <div id="map-container" class="map-container">
+          <div class="map-caption"><span class="small-label">THE LISTENING CONSTELLATION</span><span id="map-status" aria-live="polite">正在展开星图…</span></div>
+          <svg id="network" viewBox="0 0 1000 720" aria-label="音乐星图，可通过 Tab 键选择歌曲" role="group"><defs><filter id="node-glow"><feGaussianBlur stdDeviation="5"/></filter></defs><g id="group-halos"></g><g id="edge-layer"></g><g id="group-labels"></g><g id="node-layer"></g></svg>
+          <div id="graph-tooltip" class="graph-tooltip" hidden></div>
+          <div class="map-bottom"><p>拖动探索 · 滚轮缩放 · 点击连接</p><div class="map-actions"><span id="motion-status" class="motion-status">○ 静态</span><button type="button" id="motion-toggle" class="motion-toggle" aria-pressed="false">▷ 开启动态</button><div class="zoom-controls"><button type="button" id="zoom-out" aria-label="缩小">−</button><span id="zoom-level">100%</span><button type="button" id="zoom-in" aria-label="放大">+</button><button type="button" id="zoom-reset" aria-label="重置星图">⤢</button></div></div></div>
+        </div>
+        <div id="catalog-view" class="catalog-view" hidden><div class="catalog-heading"><span class="small-label">THE COMPLETE COLLECTION</span><span id="results-count" aria-live="polite"></span></div><div id="catalog-rows"></div></div>
+        <div class="legend" id="legend" role="group" aria-label="筛选探索区域"></div>
+        <div class="relation-controls"><span class="small-label">CONNECTIONS</span><button type="button" class="active" data-relation="style" aria-pressed="true">风格</button><button type="button" data-relation="all" aria-pressed="false">全部</button><button type="button" data-relation="sound" aria-pressed="false">声音</button><button type="button" data-relation="emotion" aria-pressed="false">情绪</button><button type="button" data-relation="structure" aria-pressed="false">结构</button><button type="button" data-relation="acoustic" aria-pressed="false">测量</button><button type="button" data-relation="lyrics" aria-pressed="false">歌词</button><button type="button" data-relation="album" aria-pressed="false">同专辑</button><button type="button" data-relation="artist" aria-pressed="false">同艺人</button><span class="line-key"><i></i>发行 / 署名 <i class="dashed"></i>候选关联</span></div>
+      </div>
+      <aside class="detail-panel" id="detail-panel" aria-label="歌曲及关系详情" aria-live="polite"></aside>
+    </div>
+    <p class="sample-note"><span class="status-dot"></span><span id="sample-note">全量收藏 · 声学测量、歌词线索与发行事实分别呈现。</span></p>
+  </section>
+  <footer class="music-footer"><span>CURATED BY SHIHANG ZHU</span><span>音乐是记忆的另一种形状。</span><a href="{{ '/' | relative_url }}">BACK HOME ↗</a></footer>
+  <noscript><p class="load-error">此交互星图需要 JavaScript。你也可以<a href="https://music.163.com/playlist?id=8114560070">直接查看网易云歌单</a>。</p></noscript>
+</main>
+<script src="{{ '/assets/js/music-atlas.js' | relative_url }}?v=9" defer></script>

@@ -1,0 +1,350 @@
+{
+  "version": 1,
+  "artists": {
+    "Chinese Football": [
+      {
+        "labels": [
+          "emo",
+          "midwest-emo",
+          "math-rock",
+          "indie-rock",
+          "indie-pop"
+        ],
+        "primary": "midwest-emo",
+        "albums": [
+          "Win&Lose"
+        ],
+        "url": "https://chinesefootball.bandcamp.com/album/win-lose",
+        "title": "Chinese Football · 官方发行标签"
+      }
+    ],
+    "法兹乐队 FAZI": [
+      {
+        "labels": [
+          "post-punk"
+        ],
+        "primary": "post-punk",
+        "url": "https://wearefazi.bandcamp.com/",
+        "title": "FAZI · 官方艺人介绍"
+      }
+    ],
+    "声音碎片乐队": [
+      {
+        "labels": [
+          "alternative-rock"
+        ],
+        "primary": "alternative-rock",
+        "url": "https://www.sohu.com/a/131371402_622291",
+        "title": "摩登天空 · 声音碎片签约介绍"
+      }
+    ],
+    "草东没有派对": [
+      {
+        "labels": [
+          "indie-rock",
+          "grunge",
+          "post-rock",
+          "punk-rock",
+          "disco"
+        ],
+        "primary": "indie-rock",
+        "albums": [
+          "瓦合",
+          "The Clod"
+        ],
+        "url": "https://nopartyforcaodong.bandcamp.com/album/the-clod",
+        "title": "草东没有派对 · 官方发行标签"
+      }
+    ],
+    "Sadness": [
+      {
+        "labels": [
+          "blackgaze",
+          "black-metal",
+          "atmospheric-black-metal",
+          "depressive-black-metal",
+          "post-metal",
+          "post-rock",
+          "shoegaze",
+          "emo"
+        ],
+        "primary": "blackgaze",
+        "url": "https://sadnessmusic.bandcamp.com/album/sadness-unreqvited",
+        "title": "Sadness · 官方发行风格标签"
+      }
+    ],
+    "toe": [
+      {
+        "labels": [
+          "math-rock",
+          "post-rock",
+          "jazz",
+          "electronic",
+          "emo"
+        ],
+        "primary": "math-rock",
+        "albums": [
+          "New Sentimentality"
+        ],
+        "url": "https://toe-music.bandcamp.com/album/new-sentimentality",
+        "title": "toe / Topshelf Records · 官方发行标签"
+      }
+    ],
+    "Totorro": [
+      {
+        "labels": [
+          "math-rock"
+        ],
+        "primary": "math-rock",
+        "url": "https://linktr.ee/totorromusic",
+        "title": "Totorro · 官方介绍"
+      }
+    ],
+    "Seas of Years": [
+      {
+        "labels": [
+          "post-rock"
+        ],
+        "primary": "post-rock",
+        "url": "https://seasofyears.bandcamp.com/music",
+        "title": "Seas of Years · 官方艺人介绍"
+      }
+    ],
+    "If Anything Happens To The Cat": [
+      {
+        "labels": [
+          "post-rock",
+          "shoegaze",
+          "indie-rock"
+        ],
+        "primary": "post-rock",
+        "url": "https://iahttc.bandcamp.com/merch",
+        "title": "If Anything Happens To The Cat · 官方艺人介绍"
+      }
+    ],
+    "Our Last Hope Lost Hope": [
+      {
+        "labels": [
+          "post-rock"
+        ],
+        "primary": "post-rock",
+        "url": "https://ourlasthopelosthope.com/",
+        "title": "Our Last Hope Lost Hope · 官方网站"
+      }
+    ],
+    "Paint The Sky Red": [
+      {
+        "labels": [
+          "post-rock"
+        ],
+        "primary": "post-rock",
+        "url": "https://painttheskyred.bandcamp.com/community",
+        "title": "Paint The Sky Red · 官方社区页"
+      }
+    ],
+    "She Her Her Hers": [
+      {
+        "labels": [
+          "shoegaze",
+          "synth-pop",
+          "ambient",
+          "alternative-rock",
+          "chillwave"
+        ],
+        "primary": "shoegaze",
+        "url": "https://sheherherhers.bandcamp.com/",
+        "title": "She Her Her Hers · 官方艺人介绍"
+      }
+    ],
+    "Shanghai Qiutian": [
+      {
+        "labels": [
+          "math-rock",
+          "indie-rock",
+          "indie-pop"
+        ],
+        "primary": "math-rock",
+        "albums": [
+          "Black Flag",
+          "黑旗"
+        ],
+        "url": "https://shanghaiqiutian.bandcamp.com/album/black-flag",
+        "title": "Shanghai Qiutian · 官方发行标签"
+      }
+    ],
+    "Fayzz": [
+      {
+        "labels": [
+          "post-rock",
+          "math-rock",
+          "jazz",
+          "hip-hop"
+        ],
+        "primary": "math-rock",
+        "url": "https://fayzzchina.bandcamp.com/",
+        "title": "Fayzz · 艺人风格资料"
+      }
+    ],
+    "The Cheers Cheers": [
+      {
+        "labels": [
+          "dream-pop",
+          "shoegaze",
+          "indie-pop"
+        ],
+        "primary": "dream-pop",
+        "url": "https://www.albumoftheyear.org/artist/254597-the-cheers-cheers/",
+        "title": "The Cheers Cheers · 艺人风格资料"
+      }
+    ],
+    "当代电影大师": [
+      {
+        "labels": [
+          "post-punk",
+          "folk-rock"
+        ],
+        "primary": "post-punk",
+        "url": "https://www.somusics.com/topics/moderncinemamaster/",
+        "title": "音阅 · 当代电影大师作品评论"
+      }
+    ],
+    "Kawa乐队": [
+      {
+        "labels": [
+          "reggae",
+          "world"
+        ],
+        "primary": "reggae",
+        "url": "https://www.caotai-music.com/kawa",
+        "title": "草台回声 · Kawa 官方介绍"
+      }
+    ],
+    "Sleep Dealer": [
+      {
+        "labels": [
+          "post-rock"
+        ],
+        "primary": "post-rock",
+        "url": "https://sleepdealer.bandcamp.com/music",
+        "title": "Sleep Dealer · 官方介绍"
+      }
+    ],
+    "性格缺失": [
+      {
+        "labels": [
+          "indie-rock",
+          "noise-rock",
+          "jazz",
+          "funk",
+          "reggae"
+        ],
+        "primary": "indie-rock",
+        "url": "https://minamiwheel.jp/artist/artist_detail/92",
+        "title": "FM802 MINAMI WHEEL · 艺人介绍"
+      }
+    ],
+    "水树": [
+      {
+        "labels": [
+          "blackgaze",
+          "post-black-metal"
+        ],
+        "primary": "blackgaze",
+        "url": "https://tassi.bandcamp.com/",
+        "title": "Tassi 水树 · 官方艺人介绍"
+      }
+    ],
+    "THE BOOTLEGS 靴腿": [
+      {
+        "labels": [
+          "indie-rock",
+          "surf-rock",
+          "dream-pop",
+          "shoegaze",
+          "indie-pop"
+        ],
+        "primary": "surf-rock",
+        "url": "https://music.apple.com/cn/playlist/the-bootlegs代表作/pl.fb0e012d1e1147c7b30b9b1bf9a877c3",
+        "title": "Apple Music · 靴腿编辑介绍"
+      }
+    ],
+    "Pu Poo Platter 宝宝盘": [
+      {
+        "labels": [
+          "jazz",
+          "funk",
+          "jazz-fusion",
+          "jazz-rock",
+          "soul",
+          "spiritual-jazz"
+        ],
+        "primary": "jazz-fusion",
+        "url": "https://whitenoiserecords.org/collections/staff-picks/products/pu-poo-platter-3-1",
+        "title": "White Noise Records · 发行风格资料"
+      }
+    ],
+    "鱼条 Fish Stick": [
+      {
+        "labels": [
+          "indie-rock",
+          "alternative-rock",
+          "post-hardcore"
+        ],
+        "primary": "indie-rock",
+        "url": "https://xiapi.quotsoft.net/artist/us/USKD3M2ba55/",
+        "title": "虾米音乐存档 · 鱼条艺人介绍"
+      }
+    ],
+    "Dopamine": [
+      {
+        "labels": [
+          "blackgaze",
+          "black-metal",
+          "depressive-black-metal",
+          "post-black-metal",
+          "post-metal",
+          "shoegaze"
+        ],
+        "primary": "blackgaze",
+        "albums": [
+          "Dying Away in The Deep Fall",
+          "Dying Away In The Deep Fall (Instrumental Edition)"
+        ],
+        "url": "https://dopaminecn.bandcamp.com/album/dying-away-in-the-deep-fall-2",
+        "title": "Dopamine / Pest Productions · 官方发行资料"
+      }
+    ],
+    "GALA": [
+      {
+        "labels": [
+          "british-rock"
+        ],
+        "primary": "british-rock",
+        "url": "https://tuanwei.nju.edu.cn/31/fc/c26265a406012/page.htm",
+        "title": "南京大学 · GALA见面会记录"
+      }
+    ],
+    "Hayd": [
+      {
+        "labels": [
+          "pop",
+          "singer-songwriter"
+        ],
+        "primary": "pop",
+        "url": "https://www.allmusic.com/artist/hayd-mn0003994366",
+        "title": "AllMusic · Hayd 艺人介绍"
+      }
+    ],
+    "DengeL（单舟）": [
+      {
+        "labels": [
+          "gothic-metal"
+        ],
+        "primary": "gothic-metal",
+        "url": "https://dengel.bandcamp.com/album/the-garden-of-earthly-delights-ii-ii",
+        "title": "DengeL · 官方艺人介绍"
+      }
+    ]
+  },
+  "tracks": {}
+}

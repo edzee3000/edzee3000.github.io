@@ -1,0 +1,1235 @@
+{
+  "#4": {
+    "name": "#4",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Always the Runner": {
+    "name": "Always the Runner",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Another One安娜万千": {
+    "name": "Another One安娜万千",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "A公馆": {
+    "name": "A公馆",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Bad Sweetheart": {
+    "name": "Bad Sweetheart",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "BbNoodles": {
+    "name": "BbNoodles",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Berlin Psycho Nurses（柏林护士）": {
+    "name": "Berlin Psycho Nurses（柏林护士）",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "C.S.B.Q乐队": {
+    "name": "C.S.B.Q乐队",
+    "labels": [
+      "punk"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/C.S.B.Q%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "C.S.B.Q楽隊",
+    "genreField": "パンク ・ スカパンク",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "COPAK": {
+    "name": "COPAK",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Childs": {
+    "name": "Childs",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Crispy脆乐团": {
+    "name": "Crispy脆乐团",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Crystal Bats": {
+    "name": "Crystal Bats",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Côme": {
+    "name": "Côme",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "DOUDOU": {
+    "name": "DOUDOU",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Deep Water水太深": {
+    "name": "Deep Water水太深",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "DeepMountains深山": {
+    "name": "DeepMountains深山",
+    "labels": [
+      "black-metal",
+      "melodic-death-metal"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E6%B7%B1%E5%B1%B1%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "深山楽隊",
+    "genreField": "ブラックメタル ・ メロディックデスメタル",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "DengeL（单舟）": {
+    "name": "DengeL（单舟）",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Diels-Alder": {
+    "name": "Diels-Alder",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Dopamine": {
+    "name": "Dopamine",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Fayzz": {
+    "name": "Fayzz",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "GALA": {
+    "name": "GALA",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "HEER乐队": {
+    "name": "HEER乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "HYBS": {
+    "name": "HYBS",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Hayd": {
+    "name": "Hayd",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Her Last Sight": {
+    "name": "Her Last Sight",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "JPBS": {
+    "name": "JPBS",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "KALEIDA": {
+    "name": "KALEIDA",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Kawa乐队": {
+    "name": "Kawa乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Life right": {
+    "name": "Life right",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Luns": {
+    "name": "Luns",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Lyn": {
+    "name": "Lyn",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Miss Woman": {
+    "name": "Miss Woman",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "NOBADINO": {
+    "name": "NOBADINO",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "P.K.14": {
+    "name": "P.K.14",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "PREP": {
+    "name": "PREP",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Pasteboard": {
+    "name": "Pasteboard",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Pu Poo Platter 宝宝盘": {
+    "name": "Pu Poo Platter 宝宝盘",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Racoon Racoon": {
+    "name": "Racoon Racoon",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "STOLEN秘密行动": {
+    "name": "STOLEN秘密行动",
+    "labels": [
+      "darkwave",
+      "electronic-rock",
+      "indie-rock",
+      "post-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E7%A7%98%E5%AF%86%E8%A1%8C%E5%8B%95%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "秘密行動楽隊",
+    "genreField": "インディーロック ・ エレクトロロック ・ ポストロック ・ ダークウェーブ",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "Shanghai Qiutian": {
+    "name": "Shanghai Qiutian",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "She Her Her Hers": {
+    "name": "She Her Her Hers",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Sleep Dealer": {
+    "name": "Sleep Dealer",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Stu Larsen": {
+    "name": "Stu Larsen",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Sunken Boat 沉舟乐队": {
+    "name": "Sunken Boat 沉舟乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "THE BOOTLEGS 靴腿": {
+    "name": "THE BOOTLEGS 靴腿",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "TRONICBOX": {
+    "name": "TRONICBOX",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "The Cheers Cheers": {
+    "name": "The Cheers Cheers",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Thought Trials": {
+    "name": "Thought Trials",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Urizen Society_由理生社": {
+    "name": "Urizen Society_由理生社",
+    "labels": [
+      "black-metal",
+      "heavy-metal"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E7%94%B1%E7%90%86%E7%94%9F%E7%A4%BE%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "由理生社楽隊",
+    "genreField": "ヘビーメタル ・ ブラックメタル",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "WAV": {
+    "name": "WAV",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "WhyOceans": {
+    "name": "WhyOceans",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "abriction": {
+    "name": "abriction",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "aesthetics across the color line": {
+    "name": "aesthetics across the color line",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "deca joins": {
+    "name": "deca joins",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "eli's ladder": {
+    "name": "eli's ladder",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "euphoria": {
+    "name": "euphoria",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "i don't like mirrors": {
+    "name": "i don't like mirrors",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "key vs. locket": {
+    "name": "key vs. locket",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "v是兔子wishtoday": {
+    "name": "v是兔子wishtoday",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "yourboyfriendsucks!": {
+    "name": "yourboyfriendsucks!",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "Дурной Вкус": {
+    "name": "Дурной Вкус",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "культодиночества": {
+    "name": "культодиночества",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "アトラスサウンドチーム": {
+    "name": "アトラスサウンドチーム",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "七八点": {
+    "name": "七八点",
+    "labels": [
+      "british-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E4%B8%83%E5%85%AB%E7%82%B9%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "七八点楽隊",
+    "genreField": "ブリットポップ ・ ブリティッシュロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "不可撤销乐队": {
+    "name": "不可撤销乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "东店": {
+    "name": "东店",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "丢火车": {
+    "name": "丢火车",
+    "labels": [
+      "british-rock",
+      "folk",
+      "pop-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E4%B8%A2%E7%81%AB%E8%BB%8A%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "丢火車楽隊",
+    "genreField": "ポップロック ・ フォーク ・ ブリティッシュロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "丢火车乐队": {
+    "name": "丢火车乐队",
+    "labels": [
+      "british-rock",
+      "folk",
+      "pop-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E4%B8%A2%E7%81%AB%E8%BB%8A%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "丢火車楽隊",
+    "genreField": "ポップロック ・ フォーク ・ ブリティッシュロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "二区六楼Moonage": {
+    "name": "二区六楼Moonage",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "伤心欲绝": {
+    "name": "伤心欲绝",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "傻子与白痴": {
+    "name": "傻子与白痴",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "八仙 8Immortals": {
+    "name": "八仙 8Immortals",
+    "labels": [
+      "alternative-rock",
+      "grunge"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E5%85%AB%E4%BB%99%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "八仙楽隊",
+    "genreField": "オルタナティブ ・ グランジ",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "六甲番": {
+    "name": "六甲番",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "冷冻街": {
+    "name": "冷冻街",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "刘森": {
+    "name": "刘森",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "华北": {
+    "name": "华北",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "南青乐队": {
+    "name": "南青乐队",
+    "labels": [
+      "grunge",
+      "punk"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E5%8D%97%E9%9D%92%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "南青楽隊",
+    "genreField": "グランジ ・ パンク",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "及时撤退Jane’s Fallback": {
+    "name": "及时撤退Jane’s Fallback",
+    "labels": [
+      "disco",
+      "dream-pop",
+      "indie-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E5%8F%8A%E6%99%82%E6%92%A4%E9%80%80%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "及時撤退楽隊",
+    "genreField": "ドリームポップ ・ インディーロック ・ ディスコ ・ シティーポップ",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "发光曲线": {
+    "name": "发光曲线",
+    "labels": [
+      "experimental",
+      "indie-rock",
+      "post-rock",
+      "psychedelic-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E7%99%BA%E5%85%89%E6%9B%B2%E7%B7%9A%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "発光曲線楽隊",
+    "genreField": "ポストロック ・ サイケデリック ・ ノイズ ・ 即興音楽 ・ インディーロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "吴吞": {
+    "name": "吴吞",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "哥伦比亚可乐": {
+    "name": "哥伦比亚可乐",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "哪吒乐队": {
+    "name": "哪吒乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "唯利玉碎计划": {
+    "name": "唯利玉碎计划",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "回春丹": {
+    "name": "回春丹",
+    "labels": [
+      "indie-rock",
+      "post-punk",
+      "psychedelic-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E5%9B%9E%E6%98%A5%E4%B8%B9%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "回春丹楽隊",
+    "genreField": "インディーロック ・ サイケデリック ・ ポストパンク",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "在": {
+    "name": "在",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "地下婴儿": {
+    "name": "地下婴儿",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "塘底": {
+    "name": "塘底",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "声音玩具": {
+    "name": "声音玩具",
+    "labels": [
+      "alternative-rock",
+      "british-rock",
+      "folk",
+      "post-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E5%A3%B0%E9%9F%B3%E7%8E%A9%E5%85%B7%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "声音玩具楽隊",
+    "genreField": "オルタナティブ ・ ブリティッシュロック ・ ポストロック ・ フォーク",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "夜叉乐队": {
+    "name": "夜叉乐队",
+    "labels": [
+      "hardcore-punk",
+      "nu-metal"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E5%A4%9C%E5%8F%89%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "夜叉楽隊",
+    "genreField": "グランジ （初期）・ メタル （初期）・ パワーメタル ・ ハードコア ・ ニューメタル",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "夜晚做决定": {
+    "name": "夜晚做决定",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "大象体操": {
+    "name": "大象体操",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "孤独的利里（Lonely Leary）": {
+    "name": "孤独的利里（Lonely Leary）",
+    "labels": [
+      "experimental",
+      "post-punk"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E5%AD%A4%E7%8B%AC%E7%9A%84%E5%88%A9%E9%87%8C%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "孤独的利里楽隊",
+    "genreField": "パンク （初期）・ ノイズ ・ ポストパンク",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "安达组合 Anda union": {
+    "name": "安达组合 Anda union",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "寸铁": {
+    "name": "寸铁",
+    "labels": [
+      "alternative-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E5%AF%B8%E9%89%84%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "寸鉄楽隊",
+    "genreField": "オルタナティブ",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "对角巷乐队": {
+    "name": "对角巷乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "小洋圖文 Yoko the printer": {
+    "name": "小洋圖文 Yoko the printer",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "小雨乐队": {
+    "name": "小雨乐队",
+    "labels": [
+      "experimental",
+      "folk",
+      "post-punk"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E5%B0%8F%E9%9B%A8",
+    "matchedTitle": "小雨",
+    "genreField": "フォーク ・ ポストパンク ・ ゴシック ・ 実験音楽",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "岛屿心情": {
+    "name": "岛屿心情",
+    "labels": [
+      "electronic-rock",
+      "indie-pop",
+      "ska"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E5%B3%B6%E5%B6%BC%E5%BF%83%E6%83%85%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "島嶼心情楽隊",
+    "genreField": "エレクトロロック ・ スカ ・ インディーポップ",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "平人乐队CommonCitizens": {
+    "name": "平人乐队CommonCitizens",
+    "labels": [
+      "blues",
+      "jazz",
+      "punk"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E5%B9%B3%E4%BA%BA%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "平人楽隊",
+    "genreField": "シティーポップ ・ ブルース ・ ジャズ ・ パンク",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "康士坦的变化球": {
+    "name": "康士坦的变化球",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "康姆士COM'Z": {
+    "name": "康姆士COM'Z",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "张醒婵": {
+    "name": "张醒婵",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "张震岳": {
+    "name": "张震岳",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "当代电影大师": {
+    "name": "当代电影大师",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "微分流形": {
+    "name": "微分流形",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "性格缺失": {
+    "name": "性格缺失",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "息止": {
+    "name": "息止",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "悲伤玩具": {
+    "name": "悲伤玩具",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "戈壁计划": {
+    "name": "戈壁计划",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "戌女": {
+    "name": "戌女",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "扎进心脏的智齿": {
+    "name": "扎进心脏的智齿",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "撒娇": {
+    "name": "撒娇",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "散人": {
+    "name": "散人",
+    "labels": [
+      "folk",
+      "folk-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E6%95%A3%E4%BA%BA%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "散人楽隊",
+    "genreField": "フォーク ・ フォークロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "文雀": {
+    "name": "文雀",
+    "labels": [
+      "post-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E6%96%87%E9%9B%80%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "文雀楽隊",
+    "genreField": "インストゥルメンタル ・ ポストロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "新学校合唱团": {
+    "name": "新学校合唱团",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "无边界音乐": {
+    "name": "无边界音乐",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "时目老树俱乐部": {
+    "name": "时目老树俱乐部",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "时过夏末": {
+    "name": "时过夏末",
+    "labels": [
+      "post-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E6%99%82%E9%81%8E%E5%A4%8F%E6%9C%AB%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "時過夏末楽隊",
+    "genreField": "ネオクラシカル ・ ポストロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "春秋": {
+    "name": "春秋",
+    "labels": [
+      "hard-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E6%98%A5%E7%A7%8B%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "春秋楽隊",
+    "genreField": "プログレッシブメタル ・ ハードロック ・ 民族音楽",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "普信主义": {
+    "name": "普信主义",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "景德镇文艺复兴": {
+    "name": "景德镇文艺复兴",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "机械心乐队": {
+    "name": "机械心乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "杨世暄 Sam Yang": {
+    "name": "杨世暄 Sam Yang",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "果蝇乐队": {
+    "name": "果蝇乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "棱镜乐队": {
+    "name": "棱镜乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "椿乐队": {
+    "name": "椿乐队",
+    "labels": [
+      "indie-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E6%A4%BF%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "椿楽隊",
+    "genreField": "インディーロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "橘子海 (Orange Ocean)": {
+    "name": "橘子海 (Orange Ocean)",
+    "labels": [
+      "indie-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E6%A9%98%E5%AD%90%E6%B5%B7%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "橘子海楽隊",
+    "genreField": "ブリットポップ ・ インディーロック ・ シティーポップ",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "气象限定Quadrant": {
+    "name": "气象限定Quadrant",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "水仙斗活佛": {
+    "name": "水仙斗活佛",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "水树": {
+    "name": "水树",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "汉堡黄": {
+    "name": "汉堡黄",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "沉默橙": {
+    "name": "沉默橙",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "沉默演讲（Silent Speech）": {
+    "name": "沉默演讲（Silent Speech）",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "浅水ShallowEnd": {
+    "name": "浅水ShallowEnd",
+    "labels": [
+      "indie-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E6%B5%85%E6%B0%B4%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "浅水楽隊",
+    "genreField": "インディーロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "海朋森": {
+    "name": "海朋森",
+    "labels": [
+      "new-wave",
+      "post-punk",
+      "post-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E6%B5%B7%E6%9C%8B%E6%A3%AE%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "海朋森楽隊",
+    "genreField": "ポストロック ・ ポストパンク ・ ニューウェーブ",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "海木": {
+    "name": "海木",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "深度睡眠乐队": {
+    "name": "深度睡眠乐队",
+    "labels": [
+      "post-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E6%B7%B1%E5%BA%A6%E7%9D%A1%E7%9C%A0%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "深度睡眠楽隊",
+    "genreField": "ポストロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "湯冷めラジオ": {
+    "name": "湯冷めラジオ",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "潮池蓝": {
+    "name": "潮池蓝",
+    "labels": [
+      "dream-pop"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E6%BD%AE%E6%B1%A0%E8%97%8D%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "潮池藍楽隊",
+    "genreField": "シティーポップ ・ シンセポップ ・ ドリームポップ",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "灯诱LampLure": {
+    "name": "灯诱LampLure",
+    "labels": [
+      "electronic-rock",
+      "experimental",
+      "post-punk",
+      "psychedelic-rock",
+      "shoegaze"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E7%81%AF%E8%AA%98%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "灯誘楽隊",
+    "genreField": "ポストパンク ・ サイケデリック ・ シューゲイザー ・ エレクトロロック ・ 実験音楽",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "灵活就业": {
+    "name": "灵活就业",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "父辈旗帜": {
+    "name": "父辈旗帜",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "犬儒乐队": {
+    "name": "犬儒乐队",
+    "labels": [
+      "indie-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E7%8A%AC%E5%84%92%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "犬儒楽隊",
+    "genreField": "インディーロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "狗毛": {
+    "name": "狗毛",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "王利夫": {
+    "name": "王利夫",
+    "labels": [
+      "electronica",
+      "folk-metal",
+      "hardcore-punk",
+      "industrial",
+      "industrial-metal",
+      "nu-metal"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E7%8E%8B%E5%88%A9%E5%A4%AB",
+    "matchedTitle": "王利夫",
+    "genreField": "エレクトロニカ ・ ハードコア ・ インダストリアル ・ ニューメタル ・ インダストリアルメタル ・ フォークメタル",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "王海洋": {
+    "name": "王海洋",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "琥珀": {
+    "name": "琥珀",
+    "labels": [
+      "post-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E7%90%A5%E7%8F%80%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "琥珀楽隊",
+    "genreField": "ポストロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "甜梅号": {
+    "name": "甜梅号",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "生祥乐队": {
+    "name": "生祥乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "白皮书乐队": {
+    "name": "白皮书乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "石岩": {
+    "name": "石岩",
+    "labels": [
+      "folk",
+      "post-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E7%9F%B3%E5%B2%A9%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "石岩楽隊",
+    "genreField": "フォーク ・ ポストロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "破碎乐队": {
+    "name": "破碎乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "碎叠": {
+    "name": "碎叠",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "绿丘": {
+    "name": "绿丘",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "羽果": {
+    "name": "羽果",
+    "labels": [
+      "british-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E7%BE%BD%E6%9E%9C%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "羽果楽隊",
+    "genreField": "ブリティッシュロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "老狼": {
+    "name": "老狼",
+    "labels": [
+      "folk"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E8%80%81%E7%8B%BC",
+    "matchedTitle": "老狼",
+    "genreField": "フォーク ・ キャンパスフォーク",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "聲無哀樂SWAL": {
+    "name": "聲無哀樂SWAL",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "脆莓(Brickleberry)": {
+    "name": "脆莓(Brickleberry)",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "腰乐队": {
+    "name": "腰乐队",
+    "labels": [
+      "alternative-rock",
+      "experimental"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E8%85%B0%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "腰楽隊",
+    "genreField": "オルタナティブ ・ 実験音楽",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "舌头": {
+    "name": "舌头",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "苏照钦": {
+    "name": "苏照钦",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "苏紫旭&The Paramecia": {
+    "name": "苏紫旭&The Paramecia",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "莉莉周她说 Lily Chou-Chou Lied": {
+    "name": "莉莉周她说 Lily Chou-Chou Lied",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "莫问乐队": {
+    "name": "莫问乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "藥倦": {
+    "name": "藥倦",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "虎啸春": {
+    "name": "虎啸春",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "虚极乐队": {
+    "name": "虚极乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "裁缝铺": {
+    "name": "裁缝铺",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "觀觀Guanguan": {
+    "name": "觀觀Guanguan",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "象乐队": {
+    "name": "象乐队",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "贊詩": {
+    "name": "贊詩",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "郁乐队": {
+    "name": "郁乐队",
+    "labels": [
+      "death-metal"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E9%83%81%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "郁楽隊",
+    "genreField": "デスメタル",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "郁云Emo Cloud": {
+    "name": "郁云Emo Cloud",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "野岸刊": {
+    "name": "野岸刊",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "钢心": {
+    "name": "钢心",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "雾也至Woo Yeah": {
+    "name": "雾也至Woo Yeah",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "雾山": {
+    "name": "雾山",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "雾虹": {
+    "name": "雾虹",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "音速行星": {
+    "name": "音速行星",
+    "labels": [
+      "electronic-rock"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E9%9F%B3%E9%80%9F%E8%A1%8C%E6%98%9F%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "音速行星楽隊",
+    "genreField": "シンセウェーブ ・ サイバーパンク ・ エレクトロロック",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "项亚蕻": {
+    "name": "项亚蕻",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "飞行冠军": {
+    "name": "飞行冠军",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "马赛克": {
+    "name": "马赛克",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "马飞": {
+    "name": "马飞",
+    "labels": [
+      "folk"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E9%A6%AC%E9%A3%9B%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "馬飛楽隊",
+    "genreField": "フォーク",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "高旗&超载乐队": {
+    "name": "高旗&超载乐队",
+    "labels": [
+      "hard-rock",
+      "heavy-metal",
+      "thrash-metal"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E9%AB%98%E6%97%97",
+    "matchedTitle": "高旗",
+    "genreField": "ハードロック ・ ヘビーメタル ・ スラッシュメタル ・ ポップメタル",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  },
+  "鱼条 Fish Stick": {
+    "name": "鱼条 Fish Stick",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "鹤鸣": {
+    "name": "鹤鸣",
+    "labels": [],
+    "status": "unmatched"
+  },
+  "麦田守望者": {
+    "name": "麦田守望者",
+    "labels": [
+      "electronica",
+      "punk"
+    ],
+    "status": "artist-context",
+    "source": "https://www.yaogun.com/wiki/%E9%BA%A6%E7%94%B0%E5%AE%88%E6%9C%9B%E8%80%85%E6%A5%BD%E9%9A%8A",
+    "matchedTitle": "麦田守望者楽隊",
+    "genreField": "パンク ・ エレクトロニカ",
+    "scope": "Chinese Rock Database 艺人风格字段，推定用于此曲，不是逐首确认"
+  }
+}
