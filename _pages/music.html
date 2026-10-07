@@ -39,13 +39,13 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 
 <nav class="nav">
   <a href="{{ '/' | relative_url }}">← Home</a>
-  <span class="nav-title">Music · 745 tracks</span>
+  <span class="nav-title">Music · {{ site.data.music | size }} tracks</span>
   <span></span>
 </nav>
 
 <section class="hero">
   <h1>Music</h1>
-  <p class="byline">Curated playlist &mdash; 摇滚 · 745 tracks</p>
+  <p class="byline">Curated playlist &mdash; 摇滚 · {{ site.data.music | size }} tracks</p>
 </section>
 
 <div class="content">
